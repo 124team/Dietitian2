@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".haoDengKe.H_ribs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="385dp"
+                android:src="@drawable/h_iamgebutton_searchitem1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="煎火腿奶酪蛋饼"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="主食"
+                android:textColor="#FF0000"
+                android:textSize="15sp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="11">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:gravity="center"
+                android:text="鸡蛋"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:gravity="center"
+                android:text="2个"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:gravity="center"
+                android:text="火腿"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:gravity="center"
+                android:text="1片"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:gravity="center"
+                android:text="奶酪"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:gravity="center"
+                android:text="15克"
+                android:textSize="15sp" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="辅料"
+                android:textColor="#FF0000"
+                android:textSize="15sp" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="11">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="0.5dip"
+                    android:background="#CCCCCC"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:gravity="center"
+                    android:text="西红柿"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="0.5dip"
+                    android:background="#CCCCCC"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:gravity="center"
+                    android:text="（1/5个）"
+                    android:textSize="15sp" />
+            </GridLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="调料"
+                android:layout_marginTop="20dp"
+                android:textColor="#FF0000"
+                android:textSize="15sp" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="11">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:gravity="center"
+                android:text="黄油"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:gravity="center"
+                android:text="20克"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:gravity="center"
+                android:text="胡椒粉"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:gravity="center"
+                android:text="少许"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:gravity="center"
+                android:text="番茄酱"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:gravity="center"
+                android:text="10克"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:gravity="center"
+                android:text="食盐"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="0.5dip"
+                android:background="#CCCCCC"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:gravity="center"
+                android:text="1.5克"
+                android:textSize="15sp" />
+            </GridLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:src="@drawable/h_iamgeview_harm_step1"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/h_iamgeview_harm_step2"
+                    android:layout_gravity="center_horizontal" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/h_iamgeview_harm_step3"
+                    android:layout_gravity="center_horizontal" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/h_iamgeview_harm_step4"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="-烹饪技巧-"
+                android:textColor="#FF0000"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="●"
+                android:textColor="#ff0000"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="10sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="煎蛋饼一定要用小火，火大很容易使底部糊上了上部还是流动的蛋液，也可以开小火用锅铲轻轻的翻炒"
+                android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="●"
+                    android:textColor="#ff0000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="当蛋饼表面还有流动的蛋液是，就加入芝士丝马上卷起，如果蛋饼全熟了就卷不起来了"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="●"
+                    android:textColor="#ff0000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="这款蛋饼的口感还是比较软嫩的，如果喜欢稍熟的，可以多煎一会儿"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

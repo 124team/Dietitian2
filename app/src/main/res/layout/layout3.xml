@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:hint="搜索帖子"
+                    android:id="@+id/w_fragment_searchTxt"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="搜索"
+                    android:id="@+id/w_fragment_searchButton"/>
+
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="2"
+                android:columnCount="2">
+
+                <LinearLayout
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:background="@drawable/w_color_blue"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_height="80dp"
+                    android:layout_margin="3dp"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:id="@+id/w_btn_communityLayout">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="用户交流"
+                        android:layout_width="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_gravity="fill_horizontal|center"
+                        android:paddingRight="5dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/w_icon_community"
+                        android:layout_margin="8dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:background="@drawable/w_color_darkgreen"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="3dp"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:id="@+id/w_btn_expertsAnswerButton">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_gravity="fill_horizontal|center"
+                        android:layout_height="wrap_content"
+                        android:text="专家解疑"
+                        android:paddingRight="5dp"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/w_icon_askpr"
+                        android:layout_margin="8dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:background="@drawable/w_color_orange"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_height="80dp"
+                    android:layout_margin="3dp"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:id="@+id/w_btn_workDisplayLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_gravity="fill_horizontal|center"
+                        android:layout_height="wrap_content"
+                        android:text="作品展示"
+                        android:paddingRight="5dp"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/w_icon_showork"
+                        android:layout_margin="7.5dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:background="@drawable/w_color_darkblue"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="3dp"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:id="@+id/w_btn_myLoveLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_gravity="fill_horizontal|center"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="5dp"
+                        android:text="我的收藏"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/w_icon_mylove"
+                        android:layout_margin="8dp"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/w_btn_moreButton">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/w_icon_hot"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="热门推荐"
+                    android:layout_gravity="bottom"
+                    android:textSize="30sp"
+                    android:layout_marginBottom="3dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="25sp"
+                    android:text="更多>>>"
+                    android:gravity="center|right"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/w_fragment_listView">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

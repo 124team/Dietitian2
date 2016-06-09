@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.neusoft.a124team.dietitian">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".haoDengKe.H_breakfast"/>
+        <activity android:name=".haoDengKe.H_breakfast2"/>
+        <activity android:name=".wangHan.W_moreHotTxt"/>
+        <activity android:name=".wangHan.W_UserCommunicate"/>
+        <activity android:name=".wangHan.W_workDisplay"/>
+        <activity android:name=".wangRui.S_test_1"/>
+        <activity android:name=".yuJiangPeng.Y_test_1"/>
+        <activity android:name=".haoDengKe.H_breakfast_item2"/>
+        <activity android:name=".haoDengKe.H_fash"/>
+        <activity android:name=".haoDengKe.H_harm"/>
+        <activity android:name=".haoDengKe.H_milk"/>
+        <activity android:name=".haoDengKe.H_ribs"/>
+        <activity android:name=".haoDengKe.H_search"/>
+        <activity android:name=".wangHan.W_mylove"/>
+        <activity android:name=".wangHan.W_ExpertsAnswer"/>
+
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">倾心营养师</string>
+    <!--咨询模块*********************************by Yu-->
+    <string name="y_levelOne">一级营养师</string>
+    <string name="y_levelTwo">二级营养师</string>
+    <string name="y_levelThree">三级营养师</string>
+    <string name="y_levelFour">四级营养师</string>
+    <string name="y_children">儿童</string>
+    <string name="y_old">老人</string>
+    <string name="y_teenage">青年</string>
+    <string name="y_baby">婴儿</string>
+    <string name="y_pregnant">孕妇</string>
+    <string name="y_patient">患者</string>
+    <string name="y_omnipotent">全能</string>
+    <string name="y_sleep">睡眠</string>
+    <string name="y_weightLose">减肥</string>
+    <string name="y_heighten">增高</string>
+    <string name="y_intelligence">智力</string>
+    <string name="y_more">更多</string>
+    <string name="y_all_first_page">全部</string>
+    <string name="y_name_of_nur1">刘红军</string>
+    <!--咨询模块******************************************End-->
+</resources>
