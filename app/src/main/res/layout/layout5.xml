@@ -4,6 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/s_circle_button"
+        android:id="@+id/s_seeting_circleBtn"
+        android:layout_gravity="center_horizontal" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

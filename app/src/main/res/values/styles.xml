@@ -51,4 +51,16 @@
     </style>
 
 
+    <style name="button_style_with_select">
+        <item name="android:background">@drawable/s_login_btndefault</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff0000ff</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+
+
+
 </resources>

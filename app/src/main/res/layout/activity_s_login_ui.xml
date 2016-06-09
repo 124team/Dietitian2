@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WangRui.S_loginUi">
+
+    <EditText
+        android:layout_marginTop="100dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/s_userName_edt"
+        android:hint="请输入用户名"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/s_passWord_edt"
+        android:hint="请输入密码"
+        android:layout_gravity="center"
+        android:inputType="textPassword"/>
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        style="@style/button_style_with_select"
+        android:text="@string/s_login"
+        android:layout_gravity="center"
+        android:id="@+id/s_login_btn"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/s_find"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/s_speed"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="200dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+
