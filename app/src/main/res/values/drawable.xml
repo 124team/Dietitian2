@@ -5,4 +5,8 @@
     <drawable name="drawable_green">#FF00FF00</drawable>
     <drawable name="drawable_yellow">#FFFF00</drawable>
     <drawable name="drawable_withe">#FFFFFF</drawable>
+<!--login按钮颜色-->
+    <drawable name="drawable_blue">#3198FF</drawable>
+    <drawable name="drawable_minblue">#0066FF</drawable>
+
 </resources>

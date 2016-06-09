@@ -20,4 +20,10 @@
     <string name="y_all_first_page">全部</string>
     <string name="y_name_of_nur1">刘红军</string>
     <!--咨询模块******************************************End-->
+    <!--登录界面S-->
+    <string name="s_login">登录</string>
+    <string name="s_register">注册</string>
+    <string name="s_find">找回密码</string>
+    <string name="s_speed">快捷登录</string>
+    <!--登录END-->
 </resources>
