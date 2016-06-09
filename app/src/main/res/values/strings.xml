@@ -17,7 +17,23 @@
     <string name="y_heighten">增高</string>
     <string name="y_intelligence">智力</string>
     <string name="y_more">更多</string>
+    <string name="y_more2">更多...</string>
     <string name="y_all_first_page">全部</string>
     <string name="y_name_of_nur1">刘红军</string>
+    <string name="y_excel">擅长</string>
+    <string name="y_boundary">|</string>
+    <string name="y_authentication">国家职业资格考试认证</string>
+    <string name="y_level">等级</string>
+    <string name="y_bespoke">我要定制</string>
+    <string name="y_consult">我要咨询</string>
+    <string name="y_evaluate">好评率</string>
+    <string name="y_evaluate_rate">98.6%</string>
+    <string name="y_respond">回答数</string>
+    <string name="y_respond_count">18686</string>
+    <string name="y_detail_brief">简介</string>
+    <string name="y_detail_brief_content">北京协和医院临床营养科教授，硕士研究生导师，[1]主任医师，营养科副主任，
+        出版过《临床营养治疗学》、《临床营养医师速查手册》、《做自己的营养医生》等专著。</string>
+    <string name="y_detail_user_evaluate">用户评价(12866)</string>
+
     <!--咨询模块******************************************End-->
 </resources>

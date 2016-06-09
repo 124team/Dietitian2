@@ -30,6 +30,8 @@
         <activity android:name=".haoDengKe.H_search"/>
         <activity android:name=".wangHan.W_mylove"/>
         <activity android:name=".wangHan.W_ExpertsAnswer"/>
+        <activity android:name=".yuJiangPeng.Y_detail_data"/>
+        <activity android:name=".yuJiangPeng.Y_bespoke_demo"/>
 
 
 
