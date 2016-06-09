@@ -11,6 +11,6 @@ public class S_loginUi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_s_login_ui);
-        setTitle("等录");
+        setTitle("登录");
     }
 }
