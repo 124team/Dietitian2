@@ -8,13 +8,15 @@ import java.util.HashMap;
 public class S_dataControl {
     public  static HashMap<String,String> getDataSource(
                                                         String id,
-                                                        String txtTitle,
+
                                                         String txtContent){
         HashMap<String,String> map=new HashMap<>();
 
         map.put("Img",id);
-        map.put("Title",txtTitle);
+
         map.put("Content",txtContent);
+
+
         return map;
 
     }

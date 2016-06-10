@@ -36,14 +36,23 @@ public class fragment1 extends Fragment {
         }
         data = new ArrayList<>();
         HashMap<String, String> map1 = S_dataControl.getDataSource(
-                R.drawable.s_home_newsimg1+ "","三明治","aaaa"
+                R.drawable.s_home_newsimg1+ "","高价水果卖的可能只是概念 牛奶草莓没有牛奶味"
                 );
         data.add(map1);
-
+        HashMap<String, String> map2 = S_dataControl.getDataSource(
+                R.drawable.s_home_newsimg1+ "","高价水果卖的可能只是概念 牛奶草莓没有牛奶味"
+        );
+        data.add(map2);
+        HashMap<String, String> map3 = S_dataControl.getDataSource(
+                R.drawable.s_home_newsimg1+ "","高价水果卖的可能只是概念 牛奶草莓没有牛奶味"
+        );
+        data.add(map3);
+        HashMap<String, String> map4 = S_dataControl.getDataSource(
+                R.drawable.s_home_newsimg1+ "","高价水果卖的可能只是概念 牛奶草莓没有牛奶味"
+        );
+        data.add(map4);
        S_newsBasAdapter adapter = new S_newsBasAdapter(getActivity(), data);
         lv.setAdapter(adapter);
-
-
         return view;
     }
 }
