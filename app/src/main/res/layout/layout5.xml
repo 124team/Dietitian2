@@ -5,12 +5,13 @@
     android:orientation="vertical">
 
     <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
         android:background="@drawable/s_circle_button"
-        android:id="@+id/s_setting_circleBtn"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/s_circle_btn"
+        android:onClick="login"/>
     <ListView
         android:layout_marginTop="100dp"
         android:layout_width="match_parent"

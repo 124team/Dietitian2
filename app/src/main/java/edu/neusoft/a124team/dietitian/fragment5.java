@@ -1,5 +1,6 @@
 package edu.neusoft.a124team.dietitian;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import edu.neusoft.a124team.dietitian.wangRui.S_dataControl;
+import edu.neusoft.a124team.dietitian.wangRui.S_loginUi;
 import edu.neusoft.a124team.dietitian.wangRui.baseAdapter.S_seetingBaseAdapter;
 
 
@@ -25,6 +27,14 @@ public class fragment5 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.layout5, container, false);
         lv = (ListView) view.findViewById(R.id.s_setting_list);
+        button=(Button)view.findViewById(R.id.s_circle_btn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), S_loginUi.class);
+                startActivity(intent);
+            }
+        });
 
 
         data = new ArrayList<>();
@@ -59,5 +69,6 @@ public class fragment5 extends Fragment {
 
         return view;
     }
+
 
 }
