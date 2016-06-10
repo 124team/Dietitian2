@@ -1,4 +1,4 @@
-package edu.neusoft.a124team.dietitian.wangRui.baseAdapter;
+package edu.neusoft.a124team.dietitian.wangRui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,5 +11,6 @@ public class S_register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_s_register);
+        setTitle("注册选择");
     }
 }

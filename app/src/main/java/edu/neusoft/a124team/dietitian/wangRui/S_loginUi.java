@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import edu.neusoft.a124team.dietitian.MainActivity;
@@ -15,12 +16,22 @@ public class S_loginUi extends AppCompatActivity {
     private Button btn;
     private EditText userName;
     private EditText passWord;
+    private TextView txt;
     private String userNameValue,passwordValue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_s_login_ui);
         setTitle("登录");
+        txt=(TextView)findViewById(R.id.s_login_registerTxt);
+        txt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(S_loginUi.this, S_register.class);
+                startActivity(i);
+            }
+        });
+
         btn = (Button) findViewById(R.id.s_login_btn);
         userName = (EditText) findViewById(R.id.s_userName_edt);
         passWord = (EditText) findViewById(R.id.s_passWord_edt);

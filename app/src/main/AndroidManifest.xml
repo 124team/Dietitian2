@@ -22,6 +22,7 @@
         <activity android:name=".wangHan.W_workDisplay"/>
         <activity android:name=".wangRui.S_test_1"/>
         <activity android:name=".wangRui.S_loginUi"/>
+     <activity android:name=".wangRui.S_register"/>
         <activity android:name=".yuJiangPeng.Y_test_1"/>
         <activity android:name=".haoDengKe.H_breakfast_item2"/>
         <activity android:name=".haoDengKe.H_fash"/>
@@ -33,8 +34,6 @@
         <activity android:name=".wangHan.W_ExpertsAnswer"/>
         <activity android:name=".yuJiangPeng.Y_detail_data"/>
         <activity android:name=".yuJiangPeng.Y_bespoke_demo"/>
-
-
 
 
     </application>
