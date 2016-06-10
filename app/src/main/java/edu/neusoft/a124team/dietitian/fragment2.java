@@ -19,7 +19,8 @@ public class fragment2 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.layout2, container, false);
-       headImage1= (ImageView)view. findViewById(R.id.y_img_nutr_head1);
+
+        headImage1= (ImageView)view. findViewById(R.id.y_img_nutr_head1);
         headImage2= (ImageView)view. findViewById(R.id.y_img_nutr_head2);
         headImage3= (ImageView)view. findViewById(R.id.y_img_nutr_head3);
         headImage4= (ImageView)view. findViewById(R.id.y_img_nutr_head4);
