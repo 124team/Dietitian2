@@ -25,6 +25,7 @@
     <string name="y_authentication">国家职业资格考试认证</string>
     <string name="y_level">等级</string>
     <string name="y_bespoke">我要定制</string>
+    <string name="y_bespoke_immediately">立即订制</string>
     <string name="y_consult">我要咨询</string>
     <string name="y_evaluate">好评率</string>
     <string name="y_evaluate_rate">98.6%</string>
@@ -34,6 +35,20 @@
     <string name="y_detail_brief_content">北京协和医院临床营养科教授，硕士研究生导师，[1]主任医师，营养科副主任，
         出版过《临床营养治疗学》、《临床营养医师速查手册》、《做自己的营养医生》等专著。</string>
     <string name="y_detail_user_evaluate">用户评价(12866)</string>
+    <string name="y_combo">|套餐选择</string>
+    <string name="y_bespoke_year">按年定制:</string>
+    <string name="y_bespoke_half_year">半年定制:</string>
+    <string name="y_bespoke_quarter">季度定制:</string>
+    <string name="y_bespoke_month">单月定制:</string>
+    <string name="y_bespoke_money">¥</string>
+    <string name="y_bespoke_year_money">26元/月</string>
+    <string name="y_bespoke_year_time">12个月</string>
+    <string name="y_bespoke_half_year_money">27元/月</string>
+    <string name="y_bespoke_half_year_time">6个月</string>
+    <string name="y_bespoke_quarter_money">28元/月</string>
+    <string name="y_bespoke_quarter_time">3个月</string>
+    <string name="y_bespoke_month_money">30元/月</string>
+    <string name="y_bespoke_month_time">1个月</string>
 
     <!--咨询模块******************************************End-->
     <!--登录界面S-->

@@ -1,7 +1,9 @@
 package edu.neusoft.a124team.dietitian.yuJiangPeng;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -30,12 +32,14 @@ public class Y_detail_data extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_y_detail_data);
+        //*************************用户头像部分***************************//
         listView = (ListView) findViewById(R.id.y_detail_listV);
         List<Map<String, Object>> list = getData();
         listView.setAdapter(new Y_detail_adapter(this,list));
-
+        //*************************用户头像部分结束***************************//
 
     }
+    //*************************用户头像部分***************************//
     public List<Map<String, Object>> getData() {
         List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
         for (int i = 0; i < 10; i++) {
@@ -48,5 +52,12 @@ public class Y_detail_data extends AppCompatActivity {
         }
         return list;
     }
+    //*************************用户头像结束***************************//
 
+    //*************************我要定制按钮***************************//
+    public void bespoke(View v){
+        Intent intent= new Intent(this, Y_bespoke_demo.class);
+        startActivity(intent);
+    }
+    //*************************我要定制按钮***************************//
 }

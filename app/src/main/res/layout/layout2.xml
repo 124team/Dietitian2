@@ -33,7 +33,7 @@
             android:textColor="#fa2d302f"
             android:drawableLeft="@drawable/y_img_search_bar_magnifier"
             android:singleLine="true"
-            android:background="@drawable/consult_search_bar"/>
+            android:background="@drawable/y_consult_search_bar"/>
         <!--上部分表格*************************************************************-->
         <TableLayout
             android:layout_width="match_parent"

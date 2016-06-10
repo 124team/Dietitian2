@@ -97,6 +97,7 @@
             android:layout_width="86dp"
             android:layout_height="26dp"
             android:text="@string/y_bespoke"
+            android:onClick="bespoke"
             android:layout_alignParentRight="true"
             android:layout_marginRight="8dp"
             android:background="@drawable/y_detail_bespoke"
