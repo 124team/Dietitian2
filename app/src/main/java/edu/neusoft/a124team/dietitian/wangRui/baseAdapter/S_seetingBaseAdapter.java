@@ -1,4 +1,4 @@
-package edu.neusoft.a124team.dietitian.wangRui;
+package edu.neusoft.a124team.dietitian.wangRui.baseAdapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -16,11 +16,11 @@ import edu.neusoft.a124team.dietitian.R;
 /**
  * Created by wang5 on 2016/6/10.
  */
-public class S_newsBasAdapter extends BaseAdapter {
+public class S_seetingBaseAdapter extends BaseAdapter {
     private Context context;
 
     private List<HashMap<String,String>> data;
-    public S_newsBasAdapter(Context context,List<HashMap<String, String>> data) {
+    public S_seetingBaseAdapter(Context context,List<HashMap<String, String>> data) {
         this.context=context;
         this.data = data;
     }
@@ -43,13 +43,13 @@ public class S_newsBasAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        ViewHolder viewHolder;
+        ViewHolder1 viewHolder;
         if(convertView==null){
-            viewHolder=new ViewHolder();
-            convertView= LayoutInflater.from(context).inflate(R.layout.s_news_listitem,null);
-            viewHolder.img=(ImageView)convertView.findViewById(R.id.s_home_newsImg);
-            viewHolder.txtTitle=(TextView)convertView.findViewById(R.id.s_thyListContent_newsTitle);
-            viewHolder.txtContent=(TextView)convertView.findViewById(R.id.s_home_newsContent);
+            viewHolder=new ViewHolder1();
+            convertView= LayoutInflater.from(context).inflate(R.layout.s_setting_listitem,null);
+            viewHolder.img=(ImageView)convertView.findViewById(R.id.s_setting_icon);
+            viewHolder.txtTitle=(TextView)convertView.findViewById(R.id.s_setting_title);
+            viewHolder.img1=(ImageView)convertView.findViewById(R.id.s_setting_aspect);
 
             convertView.setTag(viewHolder);
 
@@ -57,20 +57,25 @@ public class S_newsBasAdapter extends BaseAdapter {
         }
 
         else{
-            viewHolder=(ViewHolder)convertView.getTag();
+            viewHolder=(ViewHolder1)convertView.getTag();
         }
 
         viewHolder.img.setImageResource(Integer.parseInt(data.get(position).get("Img")));
-        viewHolder.txtContent.setText(data.get(position).get("Content"));
+        viewHolder.txtTitle.setText(data.get(position).get("Title"));
+
+
+
+
 
         return convertView;
     }
 }
 
-class ViewHolder{
+class ViewHolder1{
     ImageView img;
     TextView txtTitle;
+    ImageView img1;
 
-    TextView txtContent;
 }
+
 

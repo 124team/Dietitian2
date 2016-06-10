@@ -7,16 +7,15 @@
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/s_circle_button"
-        android:id="@+id/s_seeting_circleBtn"
+        android:id="@+id/s_setting_circleBtn"
         android:layout_gravity="center_horizontal" />
-
-    <TextView
+    <ListView
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="设置"
-        android:textSize="30sp"
-        android:gravity="center"/>
-
+        android:layout_height="wrap_content"
+        android:id="@+id/s_setting_list">
+    </ListView>
 
 </LinearLayout>
