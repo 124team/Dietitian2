@@ -2,7 +2,9 @@ package edu.neusoft.a124team.dietitian.yuJiangPeng;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 
@@ -14,7 +16,7 @@ import java.util.Map;
 import edu.neusoft.a124team.dietitian.R;
 
 public class Y_detail_data extends AppCompatActivity {
-    private ListView listView = null;
+    private ListView listView ;
     int h[] = new int[]{R.drawable.y_img_user1, R.drawable.y_img_user2, R.drawable.y_img_user3,
             R.drawable.y_img_user4, R.drawable.y_img_user5, R.drawable.y_img_user6,
             R.drawable.y_img_user7, R.drawable.y_img_user8, R.drawable.y_img_user9,
@@ -32,10 +34,14 @@ public class Y_detail_data extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_y_detail_data);
+        ActionBar actionBar=getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.back);
+
         //*************************用户头像部分***************************//
-        listView = (ListView) findViewById(R.id.y_detail_listV);
+        listView = (ListView)this.findViewById(R.id.y_detail_listV);
         List<Map<String, Object>> list = getData();
-        listView.setAdapter(new Y_detail_adapter(this,list));
+        listView.setAdapter(new Y_detail_adapter(Y_detail_data.this,list));
         //*************************用户头像部分结束***************************//
 
     }
@@ -60,4 +66,21 @@ public class Y_detail_data extends AppCompatActivity {
         startActivity(intent);
     }
     //*************************我要定制按钮***************************//
+
+    //*************************我要咨询按钮***************************//
+    public void consult(View v){
+        Intent intent= new Intent(this, Y_conversation_demo.class);
+        startActivity(intent);
+    }
+    //*************************我要咨询按钮结束***************************//
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()==android.R.id.home)
+        {
+            finish();
+            return  true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

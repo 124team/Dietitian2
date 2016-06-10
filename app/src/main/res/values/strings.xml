@@ -49,6 +49,9 @@
     <string name="y_bespoke_quarter_time">3个月</string>
     <string name="y_bespoke_month_money">30元/月</string>
     <string name="y_bespoke_month_time">1个月</string>
+    <string name="y_conversation1">您好！很高兴为你服务!</string>
+    <string name="y_conversation2">您好！我想咨询下baby的营养搭配方案！</string>
+    <string name="y_conversation3">没问题！请提供下宝宝的基本情况！</string>
 
     <!--咨询模块******************************************End-->
     <!--登录界面S-->

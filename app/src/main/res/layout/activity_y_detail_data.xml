@@ -107,6 +107,7 @@
             android:layout_width="86dp"
             android:layout_height="26dp"
             android:text="@string/y_consult"
+            android:onClick="consult"
             android:background="@drawable/y_detail_bespoke"
             android:layout_alignTop="@+id/y_detail_text7"
             android:layout_alignStart="@+id/y_detail_button1" />
