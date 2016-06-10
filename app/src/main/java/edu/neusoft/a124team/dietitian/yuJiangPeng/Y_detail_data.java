@@ -2,7 +2,9 @@ package edu.neusoft.a124team.dietitian.yuJiangPeng;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 
@@ -32,6 +34,10 @@ public class Y_detail_data extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_y_detail_data);
+        ActionBar actionBar=getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.back);
+
         //*************************用户头像部分***************************//
         listView = (ListView)this.findViewById(R.id.y_detail_listV);
         List<Map<String, Object>> list = getData();
@@ -67,4 +73,14 @@ public class Y_detail_data extends AppCompatActivity {
         startActivity(intent);
     }
     //*************************我要咨询按钮结束***************************//
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()==android.R.id.home)
+        {
+            finish();
+            return  true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
