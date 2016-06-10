@@ -5,18 +5,18 @@
     android:orientation="vertical">
 
     <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
         android:background="@drawable/s_circle_button"
-        android:id="@+id/s_seeting_circleBtn"
-        android:layout_gravity="center_horizontal" />
-
-    <TextView
+        android:id="@+id/s_circle_btn"
+        android:onClick="login"/>
+    <ListView
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="设置"
-        android:textSize="30sp"
-        android:gravity="center"/>
-
+        android:layout_height="wrap_content"
+        android:id="@+id/s_setting_list">
+    </ListView>
 
 </LinearLayout>

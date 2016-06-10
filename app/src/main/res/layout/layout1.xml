@@ -14,20 +14,34 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:id="@+id/Home">
-
-            <HorizontalScrollView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+            <ViewFlipper
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/horizontalScrollView"
-                android:scrollbars="none"
+                android:id="@+id/s_home_vie"
                 >
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
+                <ImageView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/s_home_cyclelayout">
-                </LinearLayout>
-            </HorizontalScrollView>
+                    android:src="@drawable/s_home_imgcycle2"
+                    android:layout_gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/s_home_imgcycle3"
+                    android:layout_gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/s_home_imgcycle1"
+                    android:layout_gravity="center_vertical" />
+
+            </ViewFlipper>
+</LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

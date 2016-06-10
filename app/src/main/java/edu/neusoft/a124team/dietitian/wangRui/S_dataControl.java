@@ -18,4 +18,16 @@ public class S_dataControl {
         return map;
 
     }
+    public  static HashMap<String,String> getDataSource1(
+            String id,
+            String txtTitle
+
+    ){
+        HashMap<String,String> map1=new HashMap<>();
+
+        map1.put("Img",id);
+        map1.put("Title",txtTitle);
+
+        return map1;
+    }
 }

@@ -6,45 +6,44 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import edu.neusoft.a124team.dietitian.wangRui.S_dataControl;
-import edu.neusoft.a124team.dietitian.wangRui.S_newsBasAdapter;
+import edu.neusoft.a124team.dietitian.wangRui.baseAdapter.S_newsBasAdapter;
 
 
 public class fragment1 extends Fragment {
-    private LinearLayout linearLayout;
+
     private ArrayList<HashMap<String, String>> data;
     private ListView lv;
+    private ViewFlipper viewFlipper;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.layout1, container, false);
 
-        linearLayout=(LinearLayout)view.findViewById(R.id.s_home_cyclelayout);
-        lv = (ListView) view.findViewById(R.id.s_home_thyList);
 
+        lv = (ListView) view.findViewById(R.id.s_home_thyList);
+        viewFlipper=(ViewFlipper)view.findViewById(R.id.s_home_vie);
+        viewFlipper.setAutoStart(true); // 设置自动播放功能（点击事件，前自动播放）
+        viewFlipper.setFlipInterval(3000);
+        if (viewFlipper.isAutoStart() && !viewFlipper.isFlipping()) {
+            viewFlipper.startFlipping();
+        }
         data = new ArrayList<>();
         HashMap<String, String> map1 = S_dataControl.getDataSource(
-                R.drawable.s_home_newsimg1+ "","三明治", "很好吃"
+                R.drawable.s_home_newsimg1+ "","三明治","aaaa"
                 );
         data.add(map1);
+
        S_newsBasAdapter adapter = new S_newsBasAdapter(getActivity(), data);
         lv.setAdapter(adapter);
 
-        int [] img1=new int[]{R.drawable.s_home_imgcycle1,
-                R.drawable.s_home_imgcycle2, R.drawable.s_home_imgcycle3};
-        for(int i=0;i<img1.length;i++) {
-            View view1=inflater.inflate(R.layout.s_home_cycle, null);
-            ImageView img=(ImageView)view1.findViewById(R.id.s_Img_Cycle);
-            img.setImageResource(img1[i]);
-            linearLayout.addView(view1);
-        }
+
         return view;
     }
 }
