@@ -39,6 +39,7 @@
         <activity android:name=".yuJiangPeng.Y_detail_data" />
         <activity android:name=".yuJiangPeng.Y_bespoke_demo" />
         <activity android:name=".yuJiangPeng.Y_conversation_demo" />
+        <activity android:name=".yuJiangPeng.Y_popups_activity"/>
         <activity android:name=".haoDengKe.H_fruit" />
         <activity android:name=".haoDengKe.H_candy" />
         <activity android:name=".wangRui.S_quickRegistration" />
