@@ -6,9 +6,31 @@
     android:orientation="vertical"
     android:background="@drawable/y_img_detail_backg"
    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/y_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:minHeight="?attr/actionBarSize" >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_gravity="center_vertical|start"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="详细自资料"
+            android:id="@+id/y_toolbar_title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/y_scrollView">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
