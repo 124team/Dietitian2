@@ -7,6 +7,8 @@ import android.widget.ListView;
 
 /**
  * Created by Hansen on 2016/6/11.
+ * 使listView可以自动算出高度适应ScrollView
+ *
  */
 public class W_adapter_Utility {
     public static void setListViewHeightBasedOnChildren(ListView listView) {
@@ -22,7 +24,7 @@ public class W_adapter_Utility {
             totalHeight += listItem.getMeasuredHeight(); // 统计所有子项的总高度
         }
         ViewGroup.LayoutParams params = listView.getLayoutParams();
-        params.height =270+ totalHeight
+        params.height =800+ totalHeight
                 + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
         // listView.getDividerHeight()获取子项间分隔符占用的高度
         // params.height最后得到整个ListView完整显示需要的高度

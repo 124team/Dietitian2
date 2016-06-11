@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 /**
  * Created by Hansen on 2016/6/10.
+ * 格式适配器
  */
 public class W_dataControl {
     public static HashMap<String,String> getFrgmentTxt(String title,String txt ,String img1,String img2,String img3){

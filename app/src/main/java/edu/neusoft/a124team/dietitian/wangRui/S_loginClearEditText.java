@@ -11,6 +11,7 @@ import android.widget.EditText;
 
 /**
  * Created by wang5 on 2016/6/11.
+ * 
  */
 public class S_loginClearEditText extends EditText {
     private final String TAG = "S_loginClearEdit";

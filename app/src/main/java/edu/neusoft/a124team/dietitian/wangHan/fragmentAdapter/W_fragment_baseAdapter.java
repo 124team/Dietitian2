@@ -9,11 +9,13 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import java.util.HashMap;
 import java.util.List;
-
 import edu.neusoft.a124team.dietitian.R;
+
+/**
+ * 社区首页的ListView
+ */
 
 public class W_fragment_baseAdapter extends BaseAdapter{
 

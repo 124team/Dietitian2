@@ -88,21 +88,23 @@ public class fragment3 extends Fragment {
         data=new ArrayList<>();
 
         data.add(W_dataControl.getFrgmentTxt(
-                "健康饮食金字塔 教你如何食得营养！",
-                "  众所周知古埃及金字塔是世界上的奇迹，是智慧和科学的结晶，是最稳定最牢固的建筑形式。同样营养“金字塔”也是膳食的最佳结构，根据塔的原理平衡营养需求，是调整膳食结构，达到合理营养、增进健康的有效方法。",
+                "健康饮食金字塔 教你食得营养！",
+                "众所周知古埃及金字塔是世界上的奇迹，是智慧和科学的结晶，是最稳定最牢固的建筑形式。同样营养“金字塔”也是膳食的最佳结构，根据塔的原理平衡营养需求，是调整膳食结构，达到合理营养、增进健康的有效方法。",
                 R.drawable.h_breakfast_item1+"",
                 R.drawable.h_breakfast_item2+"",
                 R.drawable.h_breakfast_item3+""));
-        data.add(W_dataControl.getFrgmentTxt("标题",
-                "内容111111111111111111111111122222222222222222222222222222222222222222222222222222222222222",
-                R.drawable.h_breakfast_item1+"",
-                R.drawable.h_breakfast_item2+"",
-                R.drawable.h_breakfast_item3+""));
-        data.add(W_dataControl.getFrgmentTxt("标题",
-                "内容111111111111111111111111122222222222222222222222222222222222222222222222222222222222222",
-                R.drawable.h_breakfast_item1+"",
-                R.drawable.h_breakfast_item2+"",
-                R.drawable.h_breakfast_item3+""));
+        data.add(W_dataControl.getFrgmentTxt(
+                "鸡蛋该咋吃？啥时多吃啥时该限制？",
+                "鸡蛋是一种几乎天天吃的食品，价格又便宜，烹调又方便，营养素含量又高，味道口感也非常不错。这么好的天然食物，还有什么可挑剔的么？但是有关鸡蛋的问题真的很多很多。一个还是两个？蛋清还是蛋黄？什么情况要限制？什么情况要多吃？对鸡蛋过敏怎么办？好大一箩筐问题，让我们一起慢慢说。",
+                R.drawable.w_img_egg_3 +"",
+                R.drawable.w_img_egg+"",
+                R.drawable.w_img_egg_2+""));
+        data.add(W_dataControl.getFrgmentTxt(
+                "寿命长短取决于它",
+                "在《素问·上古天真论》中就有论述人的正常寿命与肾之精气的盛衰有关。中医认为“肾衰”是导致衰老的重要原因。人至中年以后，肾之精气开始衰 退，头发脱落，牙齿枯槁，阳气衰弱于上部，出现面容憔悴、两鬓发白，接着筋骨活动不灵便，丧失生育功能等一系列衰老的症状开始展现。",
+                R.drawable.w_img_people_1+"",
+                R.drawable.w_img_people_2+"",
+                R.drawable.w_img_people_3+""));
 
         W_fragment_baseAdapter adapter = new W_fragment_baseAdapter(getActivity(),data);
         listView.setAdapter(adapter);
