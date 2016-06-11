@@ -55,10 +55,7 @@ public class S_seetingBaseAdapter extends BaseAdapter {
             viewHolder.img=(ImageView)convertView.findViewById(R.id.s_setting_icon);
             viewHolder.txtTitle=(TextView)convertView.findViewById(R.id.s_setting_title);
             viewHolder.img1=(ImageView)convertView.findViewById(R.id.s_setting_aspect);
-
             convertView.setTag(viewHolder);
-
-
         }
 
         else{
@@ -68,11 +65,6 @@ public class S_seetingBaseAdapter extends BaseAdapter {
         viewHolder.img.setImageResource(Integer.parseInt(data.get(position).get("Img")));
         viewHolder.txtTitle.setText(data.get(position).get("Title"));
         viewHolder.img1.setImageResource(Integer.parseInt(data.get(position).get("Img1")));
-
-
-
-
-
         return convertView;
     }
 }

@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import edu.neusoft.a124team.dietitian.R;
 
 public class S_register extends AppCompatActivity {
     private Button btn;
+    private ImageView imgReturn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,15 @@ public class S_register extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i=new Intent(S_register.this,S_quickRegistration.class);
                 startActivity(i);
+            }
+        });
+        //返回//
+        imgReturn = (ImageView) this.findViewById(R.id.s_return_page);
+        imgReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+
             }
         });
 

@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import edu.neusoft.a124team.dietitian.wangRui.S_dataControl;
+import edu.neusoft.a124team.dietitian.wangRui.baseAdapter.S_adapter_solveBug;
 import edu.neusoft.a124team.dietitian.wangRui.baseAdapter.S_newsBasAdapter;
 
 
@@ -33,10 +34,8 @@ public class fragment1 extends Fragment {
                 svResult.fullScroll(ScrollView.FOCUS_UP);
                 svResult.setFocusable(false);
                 svResult.setFocusableInTouchMode(false);
-
             }
         });
-
 
         lv = (ListView) view.findViewById(R.id.s_home_thyList);
         viewFlipper=(ViewFlipper)view.findViewById(R.id.s_home_vie);
@@ -63,8 +62,9 @@ public class fragment1 extends Fragment {
         );
 
         data.add(map4);
-       S_newsBasAdapter adapter = new S_newsBasAdapter(getActivity(), data);
+        S_newsBasAdapter adapter = new S_newsBasAdapter(getActivity(), data);
         lv.setAdapter(adapter);
+        S_adapter_solveBug.setListViewHeightBasedOnChildren(lv);
         return view;
     }
 
