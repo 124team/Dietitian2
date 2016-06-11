@@ -1,5 +1,6 @@
 package edu.neusoft.a124team.dietitian;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,8 +8,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,7 +22,6 @@ import edu.neusoft.a124team.dietitian.wangHan.W_UserCommunicate;
 import edu.neusoft.a124team.dietitian.wangHan.W_moreHotTxt;
 import edu.neusoft.a124team.dietitian.wangHan.W_mylove;
 import edu.neusoft.a124team.dietitian.wangHan.W_workDisplay;
-import edu.neusoft.a124team.dietitian.wangHan.fragmentAdapter.W_adapter_Utility;
 import edu.neusoft.a124team.dietitian.wangHan.fragmentAdapter.W_dataControl;
 import edu.neusoft.a124team.dietitian.wangHan.fragmentAdapter.W_fragment_baseAdapter;
 
@@ -27,13 +30,28 @@ public class fragment3 extends Fragment {
     private LinearLayout UserCommunication,ExpertsAnswer,WorkDisplay,MyLove,More;
     private ArrayList<HashMap<String,String>> data;
     private ListView listView;
+    private Button searchButton;
+    private Context context;
 
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.layout3, container, false);
+
+        /**
+         * 注册界面监听器
+         */
+
+        searchButton = (Button)view.findViewById(R.id.w_fragment_searchButton);
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(),"没有找到相关内容",Toast.LENGTH_LONG).show();
+            }
+        });
+
         UserCommunication = (LinearLayout)view.findViewById(R.id.w_btn_communityLayout);
         UserCommunication.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,7 +112,7 @@ public class fragment3 extends Fragment {
                 R.drawable.h_breakfast_item2+"",
                 R.drawable.h_breakfast_item3+""));
         data.add(W_dataControl.getFrgmentTxt(
-                "鸡蛋该咋吃？啥时多吃啥时该限制？",
+                "鸡蛋该咋吃？啥时该限制？",
                 "鸡蛋是一种几乎天天吃的食品，价格又便宜，烹调又方便，营养素含量又高，味道口感也非常不错。这么好的天然食物，还有什么可挑剔的么？但是有关鸡蛋的问题真的很多很多。一个还是两个？蛋清还是蛋黄？什么情况要限制？什么情况要多吃？对鸡蛋过敏怎么办？好大一箩筐问题，让我们一起慢慢说。",
                 R.drawable.w_img_egg_3 +"",
                 R.drawable.w_img_egg+"",
@@ -108,8 +126,27 @@ public class fragment3 extends Fragment {
 
         W_fragment_baseAdapter adapter = new W_fragment_baseAdapter(getActivity(),data);
         listView.setAdapter(adapter);
-        W_adapter_Utility.setListViewHeightBasedOnChildren(listView);
 
         return view;
+    }
+
+    public class MyListener implements AdapterView.OnItemClickListener{
+
+        Intent intent;
+
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            switch (position){
+                case (0) :
+
+                    break;
+                case (1):
+
+                    break;
+                case (2):
+
+                    break;
+            }
+        }
     }
 }

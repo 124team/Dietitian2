@@ -140,7 +140,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:src="@drawable/w_icon_share"
+                    android:src="@drawable/w_icon_collecte"
                     />
 
                 <TextView
@@ -148,7 +148,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:textColor="#000000"
-                    android:text="分享"
+                    android:text="收藏"
                     />
 
             </LinearLayout>

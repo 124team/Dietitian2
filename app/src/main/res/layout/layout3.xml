@@ -193,7 +193,7 @@
 
             <ListView
                 android:layout_width="match_parent"
-                android:layout_height="600dp"
+                android:layout_height="900dp"
                 android:id="@+id/w_fragment_listView"
                 android:divider="@null"
                 >
