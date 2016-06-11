@@ -57,6 +57,7 @@
     <string name="y_consult_enter">长按发送语音</string>
     <string name="y_consult_send">发送</string>
     <!--咨询模块******************************************End-->
+
     <!--登录界面S-->
     <string name="s_login">登录</string>
     <string name="s_register">注册</string>
@@ -68,4 +69,5 @@
     <string name="s_ordinary_register">普通注册</string>
     <string name="s_dietitian_register">营养师注册</string>
     <!--注册END-->
+
 </resources>
