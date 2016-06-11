@@ -273,6 +273,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginTop="48dp"
         android:background="@drawable/y_bespoke_immediately_button"
-        android:text="@string/y_bespoke_immediately"/>
+        android:text="@string/y_bespoke_immediately"
+        android:id="@+id/y_bespoke_btn"/>
 
 </LinearLayout>

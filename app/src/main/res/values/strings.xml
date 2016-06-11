@@ -56,6 +56,16 @@
     <string name="y_detail">详细资料</string>
     <string name="y_consult_enter">长按发送语音</string>
     <string name="y_consult_send">发送</string>
+    <string name="y_popups_pay">| 请选择支付方式</string>
+    <string name="y_popups_cancel">取消</string>
+    <string name="y_popups_pay_z">支付宝支付</string>
+    <string name="y_popups_pay_z_w">关联支付宝客户端,更快捷更安全</string>
+    <string name="y_popups_pay_w">微信支付</string>
+    <string name="y_popups_pay_w_w">绑定微信账号,快速支付</string>
+    <string name="y_popups_pay_bc">银行卡支付</string>
+    <string name="y_popups_pay_bc_w">添加银行卡</string>
+
+
     <!--咨询模块******************************************End-->
 
     <!--登录界面S-->
