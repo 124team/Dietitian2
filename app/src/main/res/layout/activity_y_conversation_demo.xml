@@ -87,7 +87,7 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
@@ -97,11 +97,29 @@
             android:src="@drawable/y_img_picture"
             android:paddingStart="8dp"
             android:paddingBottom="6dp"
-            android:layout_gravity="center_vertical|start"/>
+            android:layout_gravity="center_vertical|start"
+            android:id="@+id/y_send_picture"/>
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-             />
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/y_consult_enter"
+            android:hint="@string/y_consult_enter"
+            android:drawableStart="@drawable/y_consult_microphone"
+            android:drawablePadding="8dp"
+            android:paddingStart="28dp"
+            />
+        <Button
+            android:layout_width="56dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="6dp"
+          android:layout_gravity="end"
+
+            android:background="@color/white"
+            android:text="@string/y_consult_send"/>
 
     </LinearLayout>
 

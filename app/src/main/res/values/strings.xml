@@ -53,6 +53,9 @@
     <string name="y_conversation2">您好！我想咨询下baby的营养搭配方案！</string>
     <string name="y_conversation3">没问题！请提供下宝宝的基本情况！</string>
     <string name="y_bespoke_demo">定制</string>
+    <string name="y_detail">详细资料</string>
+    <string name="y_consult_enter">长按发送语音</string>
+    <string name="y_consult_send">发送</string>
     <!--咨询模块******************************************End-->
     <!--登录界面S-->
     <string name="s_login">登录</string>

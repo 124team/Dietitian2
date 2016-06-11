@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 
 import edu.neusoft.a124team.dietitian.yuJiangPeng.Y_detail_data;
 
@@ -15,11 +16,22 @@ import edu.neusoft.a124team.dietitian.yuJiangPeng.Y_detail_data;
 public class fragment2 extends Fragment {
     private ImageView headImage1,headImage2,headImage3,headImage4,headImage5,headImage6,
             headImage7, headImage8;
+    private ScrollView mScrollView;
+ //   private Toolbar mtoolbar;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.layout2, container, false);
+       // mtoolbar=(Toolbar)getActivity().findViewById(R.id.y_major_toolbar);
 
+        mScrollView=(ScrollView)view.findViewById(R.id.y_scrollView_consult);
+        mScrollView.post(new Runnable() {
+            @Override
+            public void run() {
+                mScrollView.fullScroll(ScrollView.FOCUS_UP);
+            }
+        });
         headImage1= (ImageView)view. findViewById(R.id.y_img_nutr_head1);
         headImage2= (ImageView)view. findViewById(R.id.y_img_nutr_head2);
         headImage3= (ImageView)view. findViewById(R.id.y_img_nutr_head3);

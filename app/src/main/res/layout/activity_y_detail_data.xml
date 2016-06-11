@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="详细自资料"
+            android:text="@string/y_detail"
             android:id="@+id/y_toolbar_title"
             android:textColor="@android:color/white"
             android:textSize="18sp"

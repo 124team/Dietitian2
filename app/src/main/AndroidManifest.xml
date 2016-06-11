@@ -32,6 +32,7 @@
         <activity android:name=".wangHan.W_ExpertsAnswer"/>
         <activity android:name=".yuJiangPeng.Y_detail_data"/>
         <activity android:name=".yuJiangPeng.Y_bespoke_demo"/>
+        <activity android:name=".yuJiangPeng.Y_conversation_demo"/>
         <activity android:name=".haoDengKe.H_fruit">
         </activity>
     </application>
