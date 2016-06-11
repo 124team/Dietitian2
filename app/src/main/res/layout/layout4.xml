@@ -3,6 +3,45 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/s_home_scroll"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/Home">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/s_home_vie"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/h_imageview_main1"
+                        android:layout_gravity="center_vertical" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/h_imageview_main2"
+                        android:layout_gravity="center_vertical" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/h_imageview_main3"
+                        android:layout_gravity="center_vertical" />
+
+                </ViewFlipper>
+            </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +70,7 @@
             android:layout_marginLeft="25dp"
             android:background="#ffffff"
             android:id="@+id/imageSearch"
-            android:src="@drawable/y_img_search_bar_magnifier"/>
+            android:src="@drawable/h_img_search"/>
 
     </LinearLayout>
     <ImageView
@@ -207,4 +246,6 @@
             android:gravity="center"
             android:text="水果餐"/>
     </GridLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

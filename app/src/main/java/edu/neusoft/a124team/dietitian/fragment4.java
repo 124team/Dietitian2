@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ScrollView;
 import android.widget.Spinner;
+import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -33,10 +35,25 @@ public class fragment4 extends Fragment {
     private ImageButton hImageButtonOnclick2;
     private ImageButton hImageButtonOnclick5;
     private ImageButton hImageButtonOnclick8;
+    private ViewFlipper viewFlipper;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.layout4, null);
+        final ScrollView svResult = (ScrollView)rootView.findViewById(R.id.s_home_scroll);
+        svResult.post(new Runnable() {
+            public void run() {
+                svResult.fullScroll(ScrollView.FOCUS_UP);
+                svResult.setFocusable(false);
+                svResult.setFocusableInTouchMode(false);
+            }
+        });
+        viewFlipper=(ViewFlipper)rootView.findViewById(R.id.s_home_vie);
+        viewFlipper.setAutoStart(true); // 设置自动播放功能（点击事件，前自动播放）
+        viewFlipper.setFlipInterval(3000);
+        if (viewFlipper.isAutoStart() && !viewFlipper.isFlipping()) {
+            viewFlipper.startFlipping();
+        }
         data_list = new ArrayList<Map<String, Object>>();
         hImageButtonSearch=(ImageButton)rootView.findViewById(R.id.imageSearch);
         hImageButtonSearch.setOnClickListener(new View.OnClickListener() {
