@@ -55,6 +55,5 @@ public class S_loginUi extends AppCompatActivity {
                 }
             }
         });
-
     }
 }

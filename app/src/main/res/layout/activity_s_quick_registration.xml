@@ -8,7 +8,7 @@
 
     tools:context="edu.neusoft.a124team.dietitian.wangRui.S_quickRegistration">
 
-    <edu.neusoft.a124team.dietitian.wangRui.S_loginClearEdit
+    <edu.neusoft.a124team.dietitian.wangRui.S_loginClearEditText
         android:layout_width="match_parent"
         android:hint="输入手机号"
         android:background="@drawable/drawable_withe"
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <edu.neusoft.a124team.dietitian.wangRui.S_loginClearEdit
+        <edu.neusoft.a124team.dietitian.wangRui.S_loginClearEditText
             android:layout_marginTop="4dp"
             android:layout_width="wrap_content"
             android:hint="输入验证码"
