@@ -14,7 +14,7 @@ import android.widget.EditText;
  * 
  */
 public class S_loginClearEditText extends EditText {
-    private final String TAG = "S_loginClearEdit";
+    private final String TAG = "S_loginClearEditText";
     private Drawable dRight;
     private Rect rBounds;
 
