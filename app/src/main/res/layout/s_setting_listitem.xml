@@ -15,11 +15,13 @@
         android:id="@+id/s_setting_title"
         android:textSize="15dp"
         android:layout_gravity="center_vertical"
+        android:layout_weight="1"
         />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/s_setting_aspect"
+
         />
 </LinearLayout>

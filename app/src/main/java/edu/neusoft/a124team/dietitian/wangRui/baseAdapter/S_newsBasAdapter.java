@@ -18,16 +18,17 @@ import edu.neusoft.a124team.dietitian.R;
  */
 public class S_newsBasAdapter extends BaseAdapter {
     private Context context;
-
+    private LayoutInflater s_layoutInflater;
     private List<HashMap<String,String>> data;
 
     public S_newsBasAdapter(Context context,List<HashMap<String, String>> data) {
         this.context=context;
         this.data = data;
+        this.s_layoutInflater=LayoutInflater.from(context);
     }
     public final class ViewHolder{
         public ImageView img;
-        public TextView txtTitle,txtContent;
+        public TextView txtTheme,txtContent,txtTime;
 
     }
 
@@ -54,21 +55,19 @@ public class S_newsBasAdapter extends BaseAdapter {
             viewHolder=new ViewHolder();
             convertView= LayoutInflater.from(context).inflate(R.layout.s_news_listitem,null);
             viewHolder.img=(ImageView)convertView.findViewById(R.id.s_home_newsImg);
-            viewHolder.txtContent=(TextView)convertView.findViewById(R.id.s_thyListContent_newsTitle);
+
             viewHolder.txtContent=(TextView)convertView.findViewById(R.id.s_home_newsContent);
-
+            viewHolder.txtTime=(TextView)convertView.findViewById(R.id.s_home_newsTime);
             convertView.setTag(viewHolder);
-
-
         }
 
         else{
             viewHolder=(ViewHolder)convertView.getTag();
         }
-
         viewHolder.img.setImageResource(Integer.parseInt(data.get(position).get("Img")));
 
         viewHolder.txtContent.setText(data.get(position).get("Content"));
+        viewHolder.txtTime.setText(data.get(position).get("Time"));
         return convertView;
     }
 }

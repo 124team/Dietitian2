@@ -60,9 +60,10 @@
 
     <!--登录界面S-->
     <string name="s_login">登录</string>
-    <string name="s_register">注册</string>
+    <string name="s_register">新用户注册</string>
     <string name="s_find">找回密码</string>
-    <string name="s_speed">快捷登录</string>
+    <string name="s_nonRegister">无法登录？</string>
+    <string name="s_thirdRegister">三方登录</string>
     <!--登录END-->
     <!--register界面-->
     <string name="s_speed_register">快速注册</string>

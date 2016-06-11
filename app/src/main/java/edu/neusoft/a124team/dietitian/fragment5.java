@@ -39,27 +39,27 @@ public class fragment5 extends Fragment {
 
         data = new ArrayList<>();
         HashMap<String, String> map = S_dataControl.getDataSource1(
-                R.drawable.s_setting_mymessage + "", "我的私信"
+                R.drawable.s_setting_mymessage + "", "我的私信",R.drawable.s_setting_aspect + ""
 
         );
         data.add(map);
         HashMap<String, String> map1 = S_dataControl.getDataSource1(
-                R.drawable.s_setting_post + "", "我的贴子"
+                R.drawable.s_setting_post + "", "我的贴子",R.drawable.s_setting_aspect + ""
 
         );
         data.add(map1);
         HashMap<String, String> map2 = S_dataControl.getDataSource1(
-                R.drawable.s_setting_information + "", "查看定制信息"
+                R.drawable.s_setting_information + "", "查看定制信息",R.drawable.s_setting_aspect + ""
 
         );
         data.add(map2);
         HashMap<String, String> map3 = S_dataControl.getDataSource1(
-                R.drawable.s_transform_account + "", "切换账号"
+                R.drawable.s_transform_account + "", "切换账号",R.drawable.s_setting_aspect + ""
 
         );
         data.add(map3);
         HashMap<String, String> map4 = S_dataControl.getDataSource1(
-                R.drawable.s_setting_update + "", "检查更新"
+                R.drawable.s_setting_update + "", "检查更新",R.drawable.s_setting_aspect + ""
 
         );
         data.add(map4);

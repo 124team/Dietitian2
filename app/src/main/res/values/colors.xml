@@ -9,6 +9,10 @@
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
 
-    <color name="textcolor_checked">#1C86EE</color>
-    <color name="textcolor">#BEBEBE</color>
+
+    <color name="s_login_shapeLine">#1C86EE</color>
+    <color name="s_registerColor">#1C86EE</color>
+    <color name="s_textColor_checked">#1C86EE</color>
+    <color name="s_textColor">#BEBEBE</color>
+    <color name="s_login_cursor">#C2797676</color>
 </resources>

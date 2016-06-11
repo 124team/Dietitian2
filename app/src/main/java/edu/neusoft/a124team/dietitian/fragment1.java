@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.ScrollView;
 import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
@@ -26,6 +27,16 @@ public class fragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.layout1, container, false);
 
+        final ScrollView svResult = (ScrollView)view.findViewById(R.id.s_home_scroll);
+        svResult.post(new Runnable() {
+            public void run() {
+                svResult.fullScroll(ScrollView.FOCUS_UP);
+                svResult.setFocusable(false);
+                svResult.setFocusableInTouchMode(false);
+
+            }
+        });
+
 
         lv = (ListView) view.findViewById(R.id.s_home_thyList);
         viewFlipper=(ViewFlipper)view.findViewById(R.id.s_home_vie);
@@ -36,23 +47,25 @@ public class fragment1 extends Fragment {
         }
         data = new ArrayList<>();
         HashMap<String, String> map1 = S_dataControl.getDataSource(
-                R.drawable.s_home_newsimg1+ "","高价水果卖的可能只是概念 牛奶草莓没有牛奶味"
+                R.drawable.s_home_newsimg1+ "","高价水果卖的可能只是概念,牛奶草莓没有牛奶味","大连网"
                 );
         data.add(map1);
         HashMap<String, String> map2 = S_dataControl.getDataSource(
-                R.drawable.s_home_newsimg1+ "","高价水果卖的可能只是概念 牛奶草莓没有牛奶味"
+                R.drawable.s_home_newsimg1+ "","高价水果卖的可能只是概念,牛奶草莓没有牛奶味","大连网"
         );
         data.add(map2);
         HashMap<String, String> map3 = S_dataControl.getDataSource(
-                R.drawable.s_home_newsimg1+ "","高价水果卖的可能只是概念 牛奶草莓没有牛奶味"
+                R.drawable.s_home_newsimg1+ "","高价水果卖的可能只是概念,牛奶草莓没有牛奶味","大连网"
         );
         data.add(map3);
         HashMap<String, String> map4 = S_dataControl.getDataSource(
-                R.drawable.s_home_newsimg1+ "","高价水果卖的可能只是概念 牛奶草莓没有牛奶味"
+                R.drawable.s_home_newsimg1+ "","高价水果卖的可能只是概念,牛奶草莓没有牛奶味","大连网"
         );
+
         data.add(map4);
        S_newsBasAdapter adapter = new S_newsBasAdapter(getActivity(), data);
         lv.setAdapter(adapter);
         return view;
     }
+
 }

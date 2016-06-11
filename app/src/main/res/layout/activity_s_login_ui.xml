@@ -4,20 +4,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".WangRui.S_loginUi">
+    tools:context=".wangRui.S_loginUi"
+    android:background="#c2e2e0e0"
+    android:baselineAligned="true">
 
-    <EditText
+    <edu.neusoft.a124team.dietitian.wangRui.S_loginClearEdit
         android:layout_marginTop="100dp"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
         android:id="@+id/s_userName_edt"
+        android:background="@drawable/drawable_withe"
+        android:textColorHint="#c2e2e0e0"
         android:hint="请输入用户名"
+        android:drawableRight="@drawable/s_login_edt_clear"
+        android:textCursorDrawable="@drawable/s_color_cursor"
+        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         android:layout_gravity="center"/>
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/s_login_lineblack"/>
+    <edu.neusoft.a124team.dietitian.wangRui.S_loginClearEdit
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:id="@+id/s_passWord_edt"
         android:hint="请输入密码"
+        android:paddingLeft="10dp"
+        android:textCursorDrawable="@drawable/s_color_cursor"
+        android:textColorHint="#c2e2e0e0"
+        android:drawableRight="@drawable/s_login_edt_clear"
+        android:background="@drawable/drawable_withe"
+        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         android:layout_gravity="center"
         android:inputType="textPassword"/>
 
@@ -43,8 +62,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        >
+        android:layout_marginTop="50dp">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/s_login_line"
+        android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/s_thirdRegister"
+            android:textColor="@color/s_login_shapeLine"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/s_login_line"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        >
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,9 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/s_login_baidu"
-
         />
-
     </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -83,12 +122,29 @@
                 />
         </LinearLayout>
     </LinearLayout>
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/s_register"
-    android:id="@+id/s_login_registerTxt"
-    android:layout_gravity="bottom"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/s_nonRegister"
+            android:id="@+id/s_login_nonRegister"
+            android:layout_margin="5dp"
+            android:textColor="@color/s_registerColor"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_register"
+        android:layout_margin="5dp"
+        android:id="@+id/s_login_registerTxt"
+        android:textColor="@color/s_registerColor"
+        android:layout_gravity="bottom"
+        />
 
+
+    </LinearLayout>
 </LinearLayout>
 

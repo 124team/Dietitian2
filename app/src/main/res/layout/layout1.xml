@@ -8,7 +8,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/s_home_scroll">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -54,7 +55,7 @@
                     android:id="@+id/s_home_healthy" />
                 <ListView
                     android:layout_width="match_parent"
-                    android:layout_height="500dp"
+                    android:layout_height="350dp"
                     android:id="@+id/s_home_thyList">
                 </ListView>
             </LinearLayout>

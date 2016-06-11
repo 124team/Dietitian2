@@ -231,7 +231,7 @@
             android:paddingStart="6dp"/>
         <ListView
             android:layout_width="match_parent"
-           android:layout_height="618dp"
+            android:layout_height="618dp"
             android:background="#CCFFFF"
             android:id="@+id/y_detail_listV"
         >

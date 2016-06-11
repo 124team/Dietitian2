@@ -18,11 +18,16 @@ import edu.neusoft.a124team.dietitian.R;
  */
 public class S_seetingBaseAdapter extends BaseAdapter {
     private Context context;
-
+    private LayoutInflater s_layoutInflater;
     private List<HashMap<String,String>> data;
     public S_seetingBaseAdapter(Context context,List<HashMap<String, String>> data) {
         this.context=context;
         this.data = data;
+        this.s_layoutInflater=LayoutInflater.from(context);
+    }
+    public final class ViewHolder1{
+        ImageView img,img1;
+        TextView txtTitle;
     }
 
     @Override
@@ -62,6 +67,7 @@ public class S_seetingBaseAdapter extends BaseAdapter {
 
         viewHolder.img.setImageResource(Integer.parseInt(data.get(position).get("Img")));
         viewHolder.txtTitle.setText(data.get(position).get("Title"));
+        viewHolder.img1.setImageResource(Integer.parseInt(data.get(position).get("Img1")));
 
 
 
@@ -71,11 +77,6 @@ public class S_seetingBaseAdapter extends BaseAdapter {
     }
 }
 
-class ViewHolder1{
-    ImageView img;
-    TextView txtTitle;
-    ImageView img1;
 
-}
 
 
