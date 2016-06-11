@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
 
@@ -18,6 +19,7 @@ public class Y_detail_data extends android.support.v7.app.AppCompatActivity {
     private ListView listView;
     private  Toolbar detailToolbar;
     private ScrollView mScrollView;
+    private ImageView  detailImg;
     int h[] = new int[]{R.drawable.y_img_user1, R.drawable.y_img_user2, R.drawable.y_img_user3,
             R.drawable.y_img_user4, R.drawable.y_img_user5, R.drawable.y_img_user6,
             R.drawable.y_img_user7, R.drawable.y_img_user8, R.drawable.y_img_user9,
@@ -50,8 +52,9 @@ public class Y_detail_data extends android.support.v7.app.AppCompatActivity {
         actionBar.setHomeAsUpIndicator(R.drawable.back);
         actionBar.setDisplayShowTitleEnabled(false);
         actionBar.setTitle("surprised");*/
-          detailToolbar = (Toolbar)this.findViewById(R.id.y_detail_toolbar);
-      detailToolbar.setOnClickListener(new View.OnClickListener() {
+        //  detailToolbar = (Toolbar)this.findViewById(R.id.y_detail_toolbar);
+        detailImg=(ImageView)this.findViewById(R.id.y_img_detail_back);
+      detailImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

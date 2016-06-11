@@ -13,6 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/back"
+            android:id="@+id/y_img_demo_back"
             android:layout_gravity="center_vertical|start"/>
         <TextView
             android:layout_width="wrap_content"
@@ -90,16 +91,14 @@
                 android:layout_toEndOf="@id/y_year_money"
                 android:textColor="@color/red"
                 android:textSize="14sp"/>
-            <RadioButton
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="58dp"
-                android:button="@null"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="18dp"
-                android:drawableEnd="@drawable/y_img_true1"
-                android:id="@+id/y_radido1"/>
+                android:src="@drawable/y_img_true1"
+                android:id="@+id/y_img1"/>
 
         </RelativeLayout>
         <RelativeLayout
@@ -145,16 +144,14 @@
                 android:textSize="14sp"
                 android:layout_toEndOf="@+id/y_half_money"
                 android:id="@+id/y_half_time"/>
-            <RadioButton
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@null"
                 android:layout_centerVertical="true"
-                android:drawableEnd="@drawable/y_img_true1"
-                android:layout_toEndOf="@+id/y_half_time"
+                android:src="@drawable/y_img_true1"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="18dp"
-                android:id="@+id/y_radido2"/>
+                android:id="@+id/y_img2"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -199,16 +196,14 @@
                 android:textSize="14sp"
                 android:layout_toEndOf="@+id/y_quarter_money"
                 android:id="@+id/y_quarter_time"/>
-            <RadioButton
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@null"
                 android:layout_centerVertical="true"
-                android:drawableEnd="@drawable/y_img_true1"
-                android:layout_toEndOf="@+id/y_quarter_time"
+                android:src="@drawable/y_img_true1"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="18dp"
-                android:id="@+id/y_radido3"/>
+                android:id="@+id/y_img3"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -253,16 +248,14 @@
                 android:textSize="14sp"
                 android:layout_toEndOf="@+id/y_month_money"
                 android:id="@+id/y_month_time"/>
-            <RadioButton
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@null"
                 android:layout_centerVertical="true"
-                android:drawableEnd="@drawable/y_img_true1"
-                android:layout_toEndOf="@+id/y_month_time"
+                android:src="@drawable/y_img_true1"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="18dp"
-                android:id="@+id/y_radido4"/>
+                android:id="@+id/y_img4"/>
         </RelativeLayout>
 
     </LinearLayout>
