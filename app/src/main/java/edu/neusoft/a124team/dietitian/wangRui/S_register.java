@@ -12,5 +12,6 @@ public class S_register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_s_register);
         setTitle("注册选择");
+
     }
 }

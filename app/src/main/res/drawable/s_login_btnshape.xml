@@ -4,7 +4,8 @@
     <corners android:radius="8dp">
     </corners>
     <gradient
-
+        android:startColor="@color/textcolor_checked"
+        android:endColor="@color/textcolor_checked"
         android:angle="45">
 
     </gradient>

@@ -20,9 +20,15 @@ public class S_newsBasAdapter extends BaseAdapter {
     private Context context;
 
     private List<HashMap<String,String>> data;
+
     public S_newsBasAdapter(Context context,List<HashMap<String, String>> data) {
         this.context=context;
         this.data = data;
+    }
+    public final class ViewHolder{
+        public ImageView img;
+        public TextView txtTitle,txtContent;
+
     }
 
     @Override
@@ -48,7 +54,7 @@ public class S_newsBasAdapter extends BaseAdapter {
             viewHolder=new ViewHolder();
             convertView= LayoutInflater.from(context).inflate(R.layout.s_news_listitem,null);
             viewHolder.img=(ImageView)convertView.findViewById(R.id.s_home_newsImg);
-
+            viewHolder.txtContent=(TextView)convertView.findViewById(R.id.s_thyListContent_newsTitle);
             viewHolder.txtContent=(TextView)convertView.findViewById(R.id.s_home_newsContent);
 
             convertView.setTag(viewHolder);
@@ -61,15 +67,11 @@ public class S_newsBasAdapter extends BaseAdapter {
         }
 
         viewHolder.img.setImageResource(Integer.parseInt(data.get(position).get("Img")));
+
         viewHolder.txtContent.setText(data.get(position).get("Content"));
         return convertView;
     }
 }
 
-class ViewHolder{
-    ImageView img;
-    TextView txtTitle;
 
-    TextView txtContent;
-}
 

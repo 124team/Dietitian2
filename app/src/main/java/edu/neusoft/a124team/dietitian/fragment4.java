@@ -18,6 +18,7 @@ import java.util.Map;
 
 import edu.neusoft.a124team.dietitian.haoDengKe.H_breakfast;
 import edu.neusoft.a124team.dietitian.haoDengKe.H_fash;
+import edu.neusoft.a124team.dietitian.haoDengKe.H_fruit;
 import edu.neusoft.a124team.dietitian.haoDengKe.H_ribs;
 import edu.neusoft.a124team.dietitian.haoDengKe.H_search;
 
@@ -31,6 +32,7 @@ public class fragment4 extends Fragment {
     private ImageButton hImageButtonOnclick1;
     private ImageButton hImageButtonOnclick2;
     private ImageButton hImageButtonOnclick5;
+    private ImageButton hImageButtonOnclick8;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -77,6 +79,17 @@ public class fragment4 extends Fragment {
                 startActivity(intent);
             }
         });
+        hImageButtonOnclick8=(ImageButton)rootView.findViewById(R.id.hImageButtonOnclick8);
+        hImageButtonOnclick8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent();
+                intent.setClass(getActivity().getApplicationContext(), H_fruit.class);
+                startActivity(intent);
+            }
+        });
+
         spinner1=(Spinner)rootView.findViewById(R.id.hSpinnerSelect1);
         spinner2=(Spinner)rootView.findViewById(R.id.hSpinnerSelect2);
         spinner3=(Spinner)rootView.findViewById(R.id.hSpinnerSelect3);
