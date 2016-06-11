@@ -16,4 +16,5 @@
     <color name="s_textColor">#BEBEBE</color>
     <color name="s_login_cursor">#C2797676</color>
     <color name="s_login_btn">#1FBAF3</color>
+    <color name="s_list_lineShape">#DCDCDC</color>
 </resources>

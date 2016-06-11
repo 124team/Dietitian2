@@ -9,14 +9,28 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
-        android:background="@drawable/s_circle_button"
+        android:background="@drawable/s_personal_nonlogin"
         android:id="@+id/s_circle_btn"
         android:onClick="login"/>
-    <ListView
+    <LinearLayout
         android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.4dp"
+        android:background="@drawable/s_login_lineblack"/>
+    <ListView
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/s_setting_list">
     </ListView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.4dp"
+        android:background="@drawable/s_login_lineblack"/>
+    </LinearLayout>
 
 </LinearLayout>

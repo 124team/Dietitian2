@@ -22,8 +22,12 @@
         <activity android:name=".wangHan.W_moreHotTxt" />
         <activity android:name=".wangHan.W_UserCommunicate" />
         <activity android:name=".wangHan.W_workDisplay" />
-        <activity android:name=".wangRui.S_loginUi"/>
-        <activity android:name=".wangRui.S_register"/>
+        <activity
+            android:name=".wangRui.S_loginUi"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".wangRui.S_register"
+            android:theme="@style/NoActionBar" />
         <activity android:name=".haoDengKe.H_breakfast_item2" />
         <activity android:name=".haoDengKe.H_fash" />
         <activity android:name=".haoDengKe.H_harm" />
@@ -35,9 +39,11 @@
         <activity android:name=".yuJiangPeng.Y_detail_data" />
         <activity android:name=".yuJiangPeng.Y_bespoke_demo" />
         <activity android:name=".yuJiangPeng.Y_conversation_demo" />
-        <activity android:name=".haoDengKe.H_fruit"></activity>
-        <activity android:name=".haoDengKe.H_candy"></activity>
-        <activity android:name=".wangRui.S_quickRegistration"></activity>
+        <activity android:name=".haoDengKe.H_fruit" />
+        <activity android:name=".haoDengKe.H_candy" />
+        <activity android:name=".wangRui.S_quickRegistration" />
+        <activity android:name=".wangRui.S_personalInformation"
+            android:theme="@style/NoActionBar" ></activity>
     </application>
 
 </manifest>

@@ -84,4 +84,10 @@
     <!--quick registration界面-->
     <string name="s_verification_code">获取验证码</string>
     <!--END-->
+    <!--个人信息设置-->
+    <string name="s_personal_nickName">昵称</string>
+    <string name="s_personal_age">年龄</string>
+    <string name="s_personal_button">保存设置</string>
+    <string name="s_personal_showButton">显示</string>
+    <!--END-->
 </resources>
