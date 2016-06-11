@@ -35,43 +35,50 @@
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
-
     </android.support.v7.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical">
-        <LinearLayout
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
+            android:layout_height="1.4dp"
+            android:background="@drawable/s_login_lineblack"/>
         <edu.neusoft.a124team.dietitian.wangRui.personalEdit.S_personalNickNameEdit
-
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="60dp"
             android:background="@drawable/drawable_withe"
             android:paddingLeft="100dp"
             android:textCursorDrawable="@drawable/s_color_cursor"
             android:id="@+id/s_personal_nickName"/>
-        </LinearLayout>
-    <edu.neusoft.a124team.dietitian.wangRui.personalEdit.S_personalAgeEdit
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.4dp"
+            android:background="@drawable/s_login_lineblack"/>
+        <edu.neusoft.a124team.dietitian.wangRui.personalEdit.S_personalAgeEdit
 
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/drawable_withe"
-        android:paddingLeft="100dp"
-        android:textCursorDrawable="@drawable/s_color_cursor"
-        android:id="@+id/s_personal_age"/>
-    <edu.neusoft.a124team.dietitian.wangRui.personalEdit.S_personalEmail
-        android:layout_width="match_parent"
-
-        android:layout_height="40dp"
-        android:background="@drawable/drawable_withe"
-        android:paddingLeft="100dp"
-        android:textCursorDrawable="@drawable/s_color_cursor"
-        android:id="@+id/s_personal_email"/>
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/drawable_withe"
+            android:paddingLeft="100dp"
+            android:textCursorDrawable="@drawable/s_color_cursor"
+            android:id="@+id/s_personal_age"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.4dp"
+            android:background="@drawable/s_login_lineblack"/>
+        <edu.neusoft.a124team.dietitian.wangRui.personalEdit.S_personalEmail
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/drawable_withe"
+            android:paddingLeft="100dp"
+            android:textCursorDrawable="@drawable/s_color_cursor"
+            android:id="@+id/s_personal_email"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.4dp"
+            android:background="@drawable/s_login_lineblack"/>
 
     </LinearLayout>
 </LinearLayout>

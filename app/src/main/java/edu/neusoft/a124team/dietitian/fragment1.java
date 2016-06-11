@@ -32,8 +32,7 @@ public class fragment1 extends Fragment {
         svResult.post(new Runnable() {
             public void run() {
                 svResult.fullScroll(ScrollView.FOCUS_UP);
-                svResult.setFocusable(false);
-                svResult.setFocusableInTouchMode(false);
+
             }
         });
 
