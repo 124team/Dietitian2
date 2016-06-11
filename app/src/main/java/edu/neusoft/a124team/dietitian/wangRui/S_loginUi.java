@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,12 +18,15 @@ public class S_loginUi extends AppCompatActivity {
     private EditText userName;
     private EditText passWord;
     private TextView txt;
+    private ImageView imgReturn;
+
     private String userNameValue,passwordValue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_s_login_ui);
         setTitle("登录");
+        //跳转注册//
         txt=(TextView)findViewById(R.id.s_login_registerTxt);
         txt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +35,16 @@ public class S_loginUi extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        //自定义bar//
+        imgReturn = (ImageView) this.findViewById(R.id.s_return_page);
+        imgReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
 
+            }
+        });
+        //设置本地登录//
         btn = (Button) findViewById(R.id.s_login_btn);
         userName = (EditText) findViewById(R.id.s_userName_edt);
         passWord = (EditText) findViewById(R.id.s_passWord_edt);

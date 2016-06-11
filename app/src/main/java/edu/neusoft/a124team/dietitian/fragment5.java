@@ -15,6 +15,7 @@ import java.util.HashMap;
 
 import edu.neusoft.a124team.dietitian.wangRui.S_dataControl;
 import edu.neusoft.a124team.dietitian.wangRui.S_loginUi;
+import edu.neusoft.a124team.dietitian.wangRui.baseAdapter.S_adapter_solveBug;
 import edu.neusoft.a124team.dietitian.wangRui.baseAdapter.S_seetingBaseAdapter;
 
 
@@ -65,7 +66,7 @@ public class fragment5 extends Fragment {
         data.add(map4);
         S_seetingBaseAdapter adapter = new S_seetingBaseAdapter(getActivity(), data);
         lv.setAdapter(adapter);
-
+        S_adapter_solveBug.setListViewHeightBasedOnChildren(lv);
 
         return view;
     }

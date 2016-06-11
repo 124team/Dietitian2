@@ -4,12 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_weight="1"
     android:id="@+id/frament1">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/s_home_scroll">
+        android:id="@+id/s_home_scroll"
+        android:scrollbars="none">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -42,7 +44,7 @@
                     android:layout_gravity="center_vertical" />
 
             </ViewFlipper>
-</LinearLayout>
+    </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -55,12 +57,10 @@
                     android:id="@+id/s_home_healthy" />
                 <ListView
                     android:layout_width="match_parent"
-                    android:layout_height="350dp"
+                    android:layout_height="wrap_content"
                     android:id="@+id/s_home_thyList">
                 </ListView>
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
 </LinearLayout>

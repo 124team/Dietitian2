@@ -61,11 +61,10 @@ public class S_newsBasAdapter extends BaseAdapter {
             convertView.setTag(viewHolder);
         }
 
-        else{
-            viewHolder=(ViewHolder)convertView.getTag();
+        else {
+            viewHolder = (ViewHolder) convertView.getTag();
         }
         viewHolder.img.setImageResource(Integer.parseInt(data.get(position).get("Img")));
-
         viewHolder.txtContent.setText(data.get(position).get("Content"));
         viewHolder.txtTime.setText(data.get(position).get("Time"));
         return convertView;

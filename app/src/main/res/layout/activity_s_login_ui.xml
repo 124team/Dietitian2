@@ -7,6 +7,28 @@
     tools:context=".wangRui.S_loginUi"
     android:background="#c2e2e0e0"
     android:baselineAligned="true">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/s_login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:minHeight="?attr/actionBarSize" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:id="@+id/s_return_page"
+            android:layout_gravity="center_vertical|start"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/s_login"
+            android:id="@+id/y_toolbar_title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
     <edu.neusoft.a124team.dietitian.wangRui.S_loginClearEditText
         android:layout_marginTop="100dp"
         android:layout_width="match_parent"
@@ -132,7 +154,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/s_register"
+            android:text="@string/s_newRegister"
             android:layout_margin="5dp"
             android:id="@+id/s_login_registerTxt"
             android:textColor="@color/s_registerColor"

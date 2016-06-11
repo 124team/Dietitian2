@@ -4,11 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     tools:context=".wangRui.S_register">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/s_register_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:minHeight="?attr/actionBarSize" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:id="@+id/s_return_page"
+            android:layout_gravity="center_vertical|start"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/s_register"
+            android:id="@+id/y_toolbar_title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/s_login_btnshape"
         android:text="@string/s_speed_register"
@@ -17,18 +38,18 @@
         android:layout_weight="1"
         android:layout_margin="50dp"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/s_login_btnshape"
-        android:text="@string/s_speed_register"
+        android:text="@string/s_ordinary_register"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
         android:layout_margin="50dp"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/s_login_btnshape"
-        android:text="@string/s_speed_register"
+        android:text="@string/s_dietitian_register"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
         android:layout_margin="50dp"/>
