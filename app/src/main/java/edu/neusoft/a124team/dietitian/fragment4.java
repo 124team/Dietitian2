@@ -115,13 +115,13 @@ public class fragment4 extends Fragment {
         SpinnerSource1.add("午餐");
         SpinnerSource1.add("晚餐");
         ArrayList<String> SpinnerSource2 = new ArrayList<String>();
-        SpinnerSource2.add("肉类");
         SpinnerSource2.add("蔬菜");
+        SpinnerSource2.add("肉类");
         SpinnerSource2.add("水果");
         ArrayList<String> SpinnerSource3 = new ArrayList<String>();
-        SpinnerSource3.add("孕妇");
-        SpinnerSource3.add("婴儿");
         SpinnerSource3.add("青少年");
+        SpinnerSource3.add("婴儿");
+        SpinnerSource3.add("孕妇");
         SpinnerSource3.add("老人");
 
 
