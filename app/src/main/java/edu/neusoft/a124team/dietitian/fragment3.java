@@ -1,6 +1,5 @@
 package edu.neusoft.a124team.dietitian;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -31,7 +31,7 @@ public class fragment3 extends Fragment {
     private ArrayList<HashMap<String,String>> data;
     private ListView listView;
     private Button searchButton;
-    private Context context;
+    private TextView weather;
 
 
     @Nullable
@@ -43,6 +43,12 @@ public class fragment3 extends Fragment {
         /**
          * 注册界面监听器
          */
+
+        MainActivity mainActivity = (MainActivity) getActivity();
+
+
+        weather = (TextView)view.findViewById(R.id.w_txt_weather);
+        weather.setText(mainActivity.getWeatherInfo());
 
         searchButton = (Button)view.findViewById(R.id.w_fragment_searchButton);
         searchButton.setOnClickListener(new View.OnClickListener() {
@@ -126,6 +132,7 @@ public class fragment3 extends Fragment {
 
         W_fragment_baseAdapter adapter = new W_fragment_baseAdapter(getActivity(),data);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new MyListener());
 
         return view;
     }
@@ -138,13 +145,17 @@ public class fragment3 extends Fragment {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             switch (position){
                 case (0) :
-
+                    Toast.makeText(getContext(),"点击了第一个",Toast.LENGTH_LONG).show();
+                    intent = new Intent(getActivity(),W_moreHotTxt.class);
+                    startActivity(intent);
                     break;
                 case (1):
-
+                    intent = new Intent(getActivity(),W_moreHotTxt.class);
+                    startActivity(intent);
                     break;
                 case (2):
-
+                    intent = new Intent(getActivity(),W_moreHotTxt.class);
+                    startActivity(intent);
                     break;
             }
         }

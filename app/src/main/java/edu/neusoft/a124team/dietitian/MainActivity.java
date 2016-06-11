@@ -1,16 +1,66 @@
 package edu.neusoft.a124team.dietitian;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.widget.RadioGroup;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-public class MainActivity extends android.support.v7.app.AppCompatActivity {
+import edu.neusoft.a124team.dietitian.wangHan.jsonWeather.W_getAndParseJson;
+import edu.neusoft.a124team.dietitian.wangHan.jsonWeather.W_weather;
+
+public class MainActivity extends AppCompatActivity {
+    /*********************************解析提天气预报BEGIN*********************************/
+    private List<W_weather> listWeather;
+    public String weatherInfo;
+
+    Handler mHandler=new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            // TODO Auto-generated method stub
+            switch (msg.what) {
+                case W_getAndParseJson.PARSESUCCWSS:
+                    listWeather=(List<W_weather>) msg.obj;
+                    // initData();
+                    show();
+                    break;
+            }
+            super.handleMessage(msg);
+        }
+    };
+
+    private void show() {
+        List<Map<String, Object>> items = new ArrayList<Map<String, Object>>();
+        for (W_weather weather : listWeather) {
+            Map<String, Object> item = new HashMap<String, Object>();
+            item.put("city", weather.getCity());
+            item.put("temp1", weather.getTemp1());
+            item.put("temp2", weather.getTemp2());
+            item.put("weather", weather.getWeather());
+            item.put("ptime",weather.getPtime());
+            items.add(item);
+
+            weatherInfo = "城市："+weather.getCity()+"  天气:"+weather.getWeather()+"  最高温度："
+                    +weather.getTemp1()+"  最低温度："+weather.getTemp2()+"  发布时间"+weather.getPtime();
+        }
+
+    }
+
+    public String getWeatherInfo() {
+        return weatherInfo;
+    }
+
+    /*******************************解析天气预报END*********************************************/
 
     ViewPager mvp;
 
@@ -30,6 +80,9 @@ public class MainActivity extends android.support.v7.app.AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        W_getAndParseJson getAndParseJson=new W_getAndParseJson(mHandler);
+        getAndParseJson.getJsonFromInternet();
 
         radio=(RadioGroup)findViewById(R.id.radio);
         radio.setOnCheckedChangeListener(new onCheckchagnge());
@@ -52,7 +105,6 @@ public class MainActivity extends android.support.v7.app.AppCompatActivity {
         fragmentArrayList.add(fragment5);
 
         mvp.setAdapter(new MyFragerPagerAdapter(getSupportFragmentManager()));
-
     }
 
     class MyFragerPagerAdapter extends FragmentPagerAdapter {
@@ -130,7 +182,6 @@ public class MainActivity extends android.support.v7.app.AppCompatActivity {
         }
         @Override
         public void onPageScrollStateChanged(int state) {
-
         }
     }
 }

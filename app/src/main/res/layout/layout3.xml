@@ -163,6 +163,19 @@
 
             </GridLayout>
 
+            <edu.neusoft.a124team.dietitian.wangHan.W_diy_textView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/w_txt_weather"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusableInTouchMode="true"
+                android:scrollHorizontally="true"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:layout_marginLeft="5dip" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
