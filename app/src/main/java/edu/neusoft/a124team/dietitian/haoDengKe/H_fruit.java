@@ -68,7 +68,7 @@ public class H_fruit extends AppCompatActivity {
                 switch (position){
                     case 0:
                         Intent intent=new Intent();
-                        intent.setClass(H_fruit.this,H_milk.class);
+                        intent.setClass(H_fruit.this,H_candy.class);
                         startActivity(intent);
                         break;
                     case 1:

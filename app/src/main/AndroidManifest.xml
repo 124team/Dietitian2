@@ -34,6 +34,8 @@
         <activity android:name=".yuJiangPeng.Y_bespoke_demo"/>
         <activity android:name=".haoDengKe.H_fruit">
         </activity>
+        <activity android:name=".haoDengKe.H_candy">
+        </activity>
     </application>
 
 </manifest>
