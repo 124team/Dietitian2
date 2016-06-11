@@ -34,7 +34,6 @@
             android:src="@drawable/y_img_search_bar_magnifier"/>
 
     </LinearLayout>
-
     <ImageView
         android:id="@+id/hImageViewOnclick1"
         android:layout_width="match_parent"
@@ -44,16 +43,17 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:columnCount="2"
         android:rowCount="4"
         >
 
         <ImageButton
             android:id="@+id/hImageButtonOnclick1"
-            android:layout_width="170dp"
+            android:layout_width="180dp"
             android:layout_height="80dp"
             android:layout_column="0"
-            android:layout_marginLeft="18dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
             android:layout_row="0"
             android:src="@drawable/h_imagebutton_select1"/>
@@ -69,7 +69,7 @@
 
         <ImageButton
             android:id="@+id/hImageButtonOnclick2"
-            android:layout_width="170dp"
+            android:layout_width="180dp"
             android:layout_height="80dp"
             android:layout_column="1"
             android:layout_row="0"
@@ -86,10 +86,10 @@
 
         <ImageButton
             android:id="@+id/hImageButtonOnclick3"
-            android:layout_width="170dp"
+            android:layout_width="180dp"
             android:layout_height="80dp"
             android:layout_column="0"
-            android:layout_marginLeft="18dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
             android:layout_row="2"
             android:src="@drawable/h_imagebutton_select3"/>
@@ -105,7 +105,7 @@
 
         <ImageButton
             android:id="@+id/hImageButtonOnclick4"
-            android:layout_width="170dp"
+            android:layout_width="180dp"
             android:layout_height="80dp"
             android:layout_column="1"
             android:layout_row="2"
@@ -124,6 +124,7 @@
     <ImageView
         android:id="@+id/hImageViewOnclick2"
         android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
         android:layout_height="30dp"
         android:src="@drawable/himageviewtitle2"/>
 
@@ -136,10 +137,10 @@
 
         <ImageButton
             android:id="@+id/hImageButtonOnclick5"
-            android:layout_width="170dp"
-            android:layout_height="63dp"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
             android:layout_column="0"
-            android:layout_marginLeft="18dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
             android:layout_row="0"
             android:src="@drawable/h_imagebutton_select5"/>
@@ -155,8 +156,8 @@
 
         <ImageButton
             android:id="@+id/hImageButtonOnclick6"
-            android:layout_width="170dp"
-            android:layout_height="63dp"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
             android:layout_column="1"
             android:layout_row="0"
             android:src="@drawable/h_imagebutton_select6"/>
@@ -172,10 +173,10 @@
 
         <ImageButton
             android:id="@+id/hImageButtonOnclick7"
-            android:layout_width="170dp"
-            android:layout_height="63dp"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
             android:layout_column="0"
-            android:layout_marginLeft="18dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
             android:layout_row="2"
             android:src="@drawable/h_imagebutton_select7"/>
@@ -191,8 +192,8 @@
 
         <ImageButton
             android:id="@+id/hImageButtonOnclick8"
-            android:layout_width="170dp"
-            android:layout_height="63dp"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
             android:layout_column="1"
             android:layout_row="2"
             android:src="@drawable/h_imagebutton_select8"/>
