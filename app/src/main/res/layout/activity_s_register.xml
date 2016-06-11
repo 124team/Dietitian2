@@ -13,6 +13,7 @@
         android:background="@drawable/s_login_btnshape"
         android:text="@string/s_speed_register"
         android:layout_gravity="center_horizontal"
+        android:id="@+id/s_quickRegistration_btn"
         android:layout_weight="1"
         android:layout_margin="50dp"/>
     <Button

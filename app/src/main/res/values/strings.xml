@@ -70,5 +70,7 @@
     <string name="s_ordinary_register">普通注册</string>
     <string name="s_dietitian_register">营养师注册</string>
     <!--注册END-->
-
+    <!--quick registration界面-->
+    <string name="s_verification_code">获取验证码</string>
+    <!--END-->
 </resources>

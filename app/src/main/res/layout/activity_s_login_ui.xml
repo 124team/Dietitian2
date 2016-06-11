@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:id="@+id/s_userName_edt"
         android:background="@drawable/drawable_withe"
         android:textColorHint="#c2e2e0e0"
@@ -26,12 +27,14 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@drawable/s_login_lineblack"/>
+
     <edu.neusoft.a124team.dietitian.wangRui.S_loginClearEdit
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:id="@+id/s_passWord_edt"
         android:hint="请输入密码"
         android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:textCursorDrawable="@drawable/s_color_cursor"
         android:textColorHint="#c2e2e0e0"
         android:drawableRight="@drawable/s_login_edt_clear"
@@ -39,8 +42,6 @@
         android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         android:layout_gravity="center"
         android:inputType="textPassword"/>
-
-
 
     <Button
         android:layout_marginTop="30dp"

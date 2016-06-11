@@ -12,22 +12,22 @@ import android.widget.EditText;
 /**
  * Created by wang5 on 2016/6/11.
  */
-public class S_loginClearEdit extends EditText {
+public class S_loginClearEditText extends EditText {
     private final String TAG = "S_loginClearEdit";
     private Drawable dRight;
     private Rect rBounds;
 
-    public S_loginClearEdit(Context paramContext) {
+    public S_loginClearEditText(Context paramContext) {
         super(paramContext);
         initEditText();
     }
 
-    public S_loginClearEdit(Context paramContext, AttributeSet paramAttributeSet) {
+    public S_loginClearEditText(Context paramContext, AttributeSet paramAttributeSet) {
         super(paramContext, paramAttributeSet);
         initEditText();
     }
 
-    public S_loginClearEdit(Context paramContext, AttributeSet paramAttributeSet, int paramInt) {
+    public S_loginClearEditText(Context paramContext, AttributeSet paramAttributeSet, int paramInt) {
         super(paramContext, paramAttributeSet, paramInt);
         initEditText();
     }
@@ -46,7 +46,7 @@ public class S_loginClearEdit extends EditText {
 
             @Override
             public void onTextChanged(CharSequence paramCharSequence, int paramInt1, int paramInt2, int paramInt3) {
-                S_loginClearEdit.this.setEditTextDrawable();
+                S_loginClearEditText.this.setEditTextDrawable();
             }
         });
     }

@@ -4,8 +4,8 @@
     <corners android:radius="8dp">
     </corners>
     <gradient
-        android:startColor="@color/s_textColor_checked"
-        android:endColor="@color/s_textColor_checked"
+        android:startColor="@color/s_login_btn"
+        android:endColor="@color/s_login_btn"
         android:angle="45">
 
     </gradient>
