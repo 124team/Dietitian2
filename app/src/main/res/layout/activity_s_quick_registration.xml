@@ -7,42 +7,67 @@
     android:background="#c2e2e0e0"
 
     tools:context="edu.neusoft.a124team.dietitian.wangRui.S_quickRegistration">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/s_login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:minHeight="?attr/actionBarSize" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:id="@+id/s_return_page"
+            android:layout_gravity="center_vertical|start"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/s_register"
+            android:id="@+id/y_toolbar_title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
 
     <edu.neusoft.a124team.dietitian.wangRui.S_loginClearEditText
         android:layout_width="match_parent"
-        android:hint="输入手机号"
+        android:hint="输入注册用户名"
         android:background="@drawable/drawable_withe"
         android:drawableRight="@drawable/s_login_edt_clear"
-        android:digits="0123456789"
+        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         android:layout_height="40dp"
         android:layout_marginTop="60dp"
         android:padding="10dp"
+        android:id="@+id/s_register_userName"
+
         android:textCursorDrawable="@drawable/s_color_cursor"
         android:textColorHint="#c2e2e0e0"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+
         <edu.neusoft.a124team.dietitian.wangRui.S_loginClearEditText
             android:layout_marginTop="4dp"
-            android:layout_width="wrap_content"
-            android:hint="输入验证码"
+            android:layout_width="match_parent"
+            android:hint="密码"
             android:layout_height="40dp"
+            android:id="@+id/s_register_passWord"
             android:padding="10dp"
+            android:inputType="textPassword"
             android:background="@drawable/drawable_withe"
             android:drawableRight="@drawable/s_login_edt_clear"
             android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:textCursorDrawable="@drawable/s_color_cursor"
             android:textColorHint="#c2e2e0e0"
-            android:layout_weight="3"/>
+            />
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="@drawable/s_login_btnshape"
-            android:text="@string/s_verification_code"
-            android:layout_weight="1"
+            android:text="注册"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:id="@+id/s_register_btn"
             />
-    </LinearLayout>
+
 
 
 </LinearLayout>

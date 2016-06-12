@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import edu.neusoft.a124team.dietitian.MainActivity;
 import edu.neusoft.a124team.dietitian.R;
+import edu.neusoft.a124team.dietitian.wangRui.userSqlite.SqliteDB;
 
 public class S_loginUi extends AppCompatActivity {
     private Button btn;
@@ -20,21 +21,12 @@ public class S_loginUi extends AppCompatActivity {
     private TextView txt;
     private ImageView imgReturn;
 
-    private String userNameValue,passwordValue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_s_login_ui);
         setTitle("登录");
-        //跳转注册//
-        txt=(TextView)findViewById(R.id.s_login_registerTxt);
-        txt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i= new Intent(S_loginUi.this, S_register.class);
-                startActivity(i);
-            }
-        });
+
         //自定义bar//
         imgReturn = (ImageView) this.findViewById(R.id.s_return_page);
         imgReturn.setOnClickListener(new View.OnClickListener() {
@@ -44,29 +36,63 @@ public class S_loginUi extends AppCompatActivity {
 
             }
         });
+
+        //跳转注册//
+        txt=(TextView)findViewById(R.id.s_login_registerTxt);
         //设置本地登录//
         btn = (Button) findViewById(R.id.s_login_btn);
         userName = (EditText) findViewById(R.id.s_userName_edt);
         passWord = (EditText) findViewById(R.id.s_passWord_edt);
-        btn.setOnClickListener(new View.OnClickListener() {
+        txt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //获取EDT的内容
-                userNameValue = userName.getText().toString();
-                passwordValue = passWord.getText().toString();
+                Intent i=new Intent(S_loginUi.this,S_quickRegistration.class);
+                startActivity(i);
 
-                if (userNameValue.equals("admin") && passwordValue.equals("123456")) {
-                    Toast.makeText(S_loginUi.this, "登录成功", Toast.LENGTH_SHORT).show();
-
-                    Intent intent = new Intent(S_loginUi.this, MainActivity.class);
-                    startActivity(intent);
-
-                } else {
-
-                    Toast.makeText(S_loginUi.this, "用户名或密码错误，请重新登录",
-                            Toast.LENGTH_LONG).show();
-                }
             }
         });
+
+
+
+    btn.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            String name = userName.getText().toString().trim();
+            String pass = passWord.getText().toString().trim();
+                //userList=SqliteDB.getInstance(getApplicationContext()).loadUser();
+            if (name.equals("")||pass.equals("")){
+                Toast.makeText(getApplicationContext(), "用户名或密码不合法",
+                        Toast.LENGTH_SHORT).show();
+            }
+
+            else {
+                int checkName = SqliteDB.getInstance(getApplicationContext()).Quer(name);
+                if (checkName == -1){
+                    int checkpass = SqliteDB.getInstance(getApplicationContext()).PassCheck(pass,name);
+
+                    if (checkpass == 1) {
+                        Toast.makeText(getApplicationContext(), "登录成功" ,
+                                Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(S_loginUi.this, MainActivity.class);
+                        startActivity(i);
+
+                    }
+
+                    else {
+
+                        Toast.makeText(getApplicationContext(), "密码错误",
+                                Toast.LENGTH_SHORT).show();
+
+                    }
+                }else{
+                    Toast.makeText(getApplicationContext(), "用户名不存在",
+                            Toast.LENGTH_SHORT).show();
+                }
+
+            }
+            }
+
+    });
     }
+
 }
