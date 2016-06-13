@@ -5,28 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".wangRui.S_healthy_two">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/s_login_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#3F51B5"
-        android:minHeight="?attr/actionBarSize" >
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/back"
-            android:id="@+id/s_return_page"
-            android:layout_gravity="center_vertical|start"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="健康资讯"
-            android:id="@+id/y_toolbar_title"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </android.support.v7.widget.Toolbar>
+
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -65,11 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="      许多家庭里水果、糖果、饮料等甜品都摆得满满的。有人在吃了太多的零食后，由于摄取了较多的糖分和香料，出现了莫名其妙的恼怒、情绪激动、嘴干舌苦等症状。此时，可以适当吃一些山楂片，多饮茶水，停吃零食。
-
-　　山楂片中含山楂酸等多种有机酸，味酸甘，并含解脂酶。入胃后，能增强酶的作用，促进肉食消化，有助于胆固醇转化。对于吃肉或油腻物后感到饱胀的人，吃些山楂、山楂片、山楂水或山楂丸等，均可消食。山楂还可利胆汁，促进胃液分泌。山楂开胃消食、化滞消积，但山楂只消不补，脾胃虚弱者不宜多食。健康的人食用山楂也应有所节制。
-
-　　此外，还要多饮茶水，因为茶叶中的咖啡碱能增加胃腺体分泌，促进食欲，帮助消化；其次，茶叶中含有的多酚类化合物以薄膜状态附着在胃的伤口处，可抑制因胃溃疡引起的出血；还可吸收对人体有害的物质，起到“净化”作用。因此，在饭后尤其是摄入较多量的含脂肪食品后，饮茶是有益的。"
+        android:text="@string/s_healthyThree"
         android:id="@+id/textView3" />
      </LinearLayout>
     </ScrollView>
