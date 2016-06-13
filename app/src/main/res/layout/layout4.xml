@@ -7,7 +7,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/s_home_scroll"
+        android:id="@+id/h_home_scroll"
         android:scrollbars="none">
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,7 +20,7 @@
                 <ViewFlipper
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/s_home_vie"
+                    android:id="@+id/h_home_vie"
                     >
                     <ImageView
                         android:layout_width="match_parent"
