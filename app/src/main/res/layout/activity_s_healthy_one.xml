@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:id="@+id/imageView"
-                android:src="@drawable/s_healthy_newsimg2"/>
+                android:src="@drawable/s_healthy_newsimg4"/>
 
 
             <TextView
