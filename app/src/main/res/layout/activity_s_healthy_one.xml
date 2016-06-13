@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".wangRui.S_healthy_two">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="四大食物可使口气清新"
+                android:textSize="30dp"
+                android:id="@+id/textView" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@drawable/s_login_lineblack"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="发表时间：2016-06-12 09:58:02 来源：新浪健康论坛"
+                android:id="@+id/textView2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/s_healthy_newsimg2"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="      　一：香芹菜
+
+　　这种草本植物最有助于消除口中的异味，尤其是烟味。如果手边一时找不到香芹菜，香菜、薄荷也能起到去除口腔异味的作用。为了达到更好的效果，这些东西嚼的时间越长越好。
+
+　　二：酸奶
+
+　　每天坚持喝酸奶可降低口腔异味，喝酸奶还可以阻止口腔中有害细菌的产生，清洁口腔，但含糖的酸奶起不到这种效果。
+
+　　三：富含纤维素的蔬菜
+
+　　包括苹果、胡萝卜等。这些蔬菜和水果有助于分泌大量唾液。唾液不仅能湿润口腔，还能清除附着在牙齿上面或塞在牙缝中的食物残渣。这些食物残渣也是导致口腔异味的原因之一。
+
+　　四：含大量维生素c的水果
+
+　　浆果、柑橘、西瓜和其他含有大量维生素c的食物能使口腔形成一个不利于细菌生长的环境。经常摄入维生素c对牙床的健康也非常有用。但要注意，维生素c应该从天然食品，而非从食品添加剂中摄入，因为添加剂可能会使消化功能紊乱。
+
+　　四大食物可使口气清新，专家表示说另外，易引起口臭的许多感染性疾病(如齿槽溢脓、龋齿、上颌窦炎、肺脓肿等)都与厌氧菌及化脓菌的联合感染有关，同时幽门螺杆菌感染也与多种易引起口臭的消化系统疾病(如慢性胃炎、十二指肠溃疡、消化不良、胃癌等)密切相关，所以及时治疗这几种细菌的感染，对消除原发病及口臭均有重要意义。" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.neusoft.a124team.dietitian">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -36,13 +36,21 @@
         <activity android:name=".yuJiangPeng.Y_detail_data" />
         <activity android:name=".yuJiangPeng.Y_bespoke_demo" />
         <activity android:name=".yuJiangPeng.Y_conversation_demo" />
-        <activity android:name=".yuJiangPeng.Y_popups_activity"/>
+        <activity android:name=".yuJiangPeng.Y_popups_activity" />
         <activity android:name=".haoDengKe.H_fruit" />
         <activity android:name=".haoDengKe.H_candy" />
-        <activity android:name=".wangRui.S_quickRegistration"
+        <activity
+            android:name=".wangRui.S_quickRegistration"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".wangRui.S_personalInformation"
-            android:theme="@style/NoActionBar" ></activity>
+        <activity
+            android:name=".wangRui.S_personalInformation"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".wangRui.S_healthy_two"
+            />
+        <activity android:name=".wangRui.S_healthyOne"
+           />
+        <activity android:name=".wangRui.S_healthy_Zero"
+           ></activity>
     </application>
 
 </manifest>

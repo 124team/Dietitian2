@@ -25,7 +25,7 @@ public class S_loginUi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_s_login_ui);
-        setTitle("登录");
+
 
         //自定义bar//
         imgReturn = (ImageView) this.findViewById(R.id.s_return_page);
