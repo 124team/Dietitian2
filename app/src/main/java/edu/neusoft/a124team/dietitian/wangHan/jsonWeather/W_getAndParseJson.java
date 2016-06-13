@@ -18,7 +18,7 @@ import java.util.List;
  * Created by Hansen on 2016/6/11.
  */
 public class W_getAndParseJson {
-    private String url="http://www.weather.com.cn/data/cityinfo/101070201.html";
+    private String url="http://www.weather.com.cn/adat/cityinfo/101070201.html";
     public static final int PARSESUCCWSS=0x2001;
     private Handler handler;
     public W_getAndParseJson(Handler handler) {
@@ -74,18 +74,15 @@ public class W_getAndParseJson {
             JSONObject jObject=jsonArray.getJSONObject("weatherinfo");
 
             String city = jObject.getString("city");
-            String cityid = jObject.getString("cityid");
             String temp1 = jObject.getString("temp1");
             String temp2 = jObject.getString("temp2");
             String wather = jObject.getString("weather");
-            String img1 = jObject.getString("img1");
-            String img2 = jObject.getString("img2");
             String ptime = jObject.getString("ptime");
 
                 /*int id=jObject.getInt("id");
                 String title=jObject.getString("title");
                 long time=jObject.getLong("publishDate");*/
-            W_weather news=new W_weather(city, cityid, temp1,temp2,wather,img1,img2,ptime);
+            W_weather news=new W_weather(city, temp1,temp2,wather,ptime);
             listWeather.add(news);
             // }
         }

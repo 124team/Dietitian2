@@ -16,23 +16,17 @@ public class W_weather {
      */
 
     private String city;
-    private String cityid;
     private String temp1;
     private String temp2;
     private String weather;
-    private String img1;
-    private String img2;
     private String ptime;
 
 
-    public W_weather(String city, String cityid, String temp1, String temp2, String weather, String img1, String img2, String ptime) {
+    public W_weather(String city,  String temp1, String temp2, String weather, String ptime) {
         this.city = city;
-        this.cityid = cityid;
         this.temp1 = temp1;
         this.temp2 = temp2;
         this.weather = weather;
-        this.img1 = img1;
-        this.img2 = img2;
         this.ptime = ptime;
     }
 

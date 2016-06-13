@@ -22,6 +22,7 @@ import edu.neusoft.a124team.dietitian.wangHan.W_UserCommunicate;
 import edu.neusoft.a124team.dietitian.wangHan.W_moreHotTxt;
 import edu.neusoft.a124team.dietitian.wangHan.W_mylove;
 import edu.neusoft.a124team.dietitian.wangHan.W_workDisplay;
+import edu.neusoft.a124team.dietitian.wangHan.activityAdapter.W_activity_adapterActivity;
 import edu.neusoft.a124team.dietitian.wangHan.fragmentAdapter.W_dataControl;
 import edu.neusoft.a124team.dietitian.wangHan.fragmentAdapter.W_fragment_baseAdapter;
 
@@ -150,10 +151,12 @@ public class fragment3 extends Fragment {
                     startActivity(intent);
                     break;
                 case (1):
-                    intent = new Intent(getActivity(),W_moreHotTxt.class);
+                    Toast.makeText(getContext(),"点击了第2个",Toast.LENGTH_LONG).show();
+                    intent = new Intent(getActivity(),W_activity_adapterActivity.class);
                     startActivity(intent);
                     break;
                 case (2):
+                    Toast.makeText(getContext(),"点击了第3个",Toast.LENGTH_LONG).show();
                     intent = new Intent(getActivity(),W_moreHotTxt.class);
                     startActivity(intent);
                     break;
