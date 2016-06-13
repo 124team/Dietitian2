@@ -96,19 +96,21 @@ public class H_breakfast extends AppCompatActivity {
                         expressItemClickFive(5);
                         break;
                 }
-
             }
         });
 
-
     }
     public void expressItemClickOne(int position){
-        Intent intent = new Intent(this, H_breakfast_item2.class);
-        int img= R.drawable.h_breakfast_item2;
-        intent.putExtra("Content", "所在区域：大连市甘井子区8号");
-        intent.putExtra("Title", "红枣鸡蛋发糕");
-        intent.putExtra("img",img);
-        startActivity(intent);
+        new AlertDialog.Builder(this).setTitle("我的提示").setMessage("确定要删除吗？")
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent=new Intent();
+                        intent.setClass(H_breakfast.this,H_breakfast2.class);
+                        startActivity(intent);
+                    }
+                }).show();
+
     }
     public void expressItemClickTwo(int position){
         new AlertDialog.Builder(this).setTitle("我的提示").setMessage("确定要删除吗？")

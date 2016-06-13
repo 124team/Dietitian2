@@ -40,7 +40,7 @@ public class fragment4 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.layout4, null);
-        final ScrollView svResult = (ScrollView)rootView.findViewById(R.id.s_home_scroll);
+        final ScrollView svResult = (ScrollView)rootView.findViewById(R.id.h_home_scroll);
         svResult.post(new Runnable() {
             public void run() {
                 svResult.fullScroll(ScrollView.FOCUS_UP);
@@ -48,7 +48,7 @@ public class fragment4 extends Fragment {
                 svResult.setFocusableInTouchMode(false);
             }
         });
-        viewFlipper=(ViewFlipper)rootView.findViewById(R.id.s_home_vie);
+        viewFlipper=(ViewFlipper)rootView.findViewById(R.id.h_home_vie);
         viewFlipper.setAutoStart(true); // 设置自动播放功能（点击事件，前自动播放）
         viewFlipper.setFlipInterval(3000);
         if (viewFlipper.isAutoStart() && !viewFlipper.isFlipping()) {
