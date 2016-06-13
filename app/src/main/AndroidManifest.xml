@@ -2,14 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.neusoft.a124team.dietitian">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -39,19 +37,20 @@
         <activity android:name=".yuJiangPeng.Y_detail_data" />
         <activity android:name=".yuJiangPeng.Y_bespoke_demo" />
         <activity android:name=".yuJiangPeng.Y_conversation_demo" />
-        <activity android:name=".yuJiangPeng.Y_popups_activity"/>
+        <activity android:name=".yuJiangPeng.Y_popups_activity" />
         <activity android:name=".haoDengKe.H_fruit" />
         <activity android:name=".haoDengKe.H_candy" />
-        <activity android:name=".wangRui.S_quickRegistration"
+        <activity
+            android:name=".wangRui.S_quickRegistration"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".wangRui.S_personalInformation"
+        <activity
+            android:name=".wangRui.S_personalInformation"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".wangHan.activityAdapter.W_activity_adapterActivity"/>
-        <activity android:name=".wangHan.W_CamreaActivity"/>
-        <activity android:name=".wangRui.S_healthy_Zero"/>
-        <activity android:name=".wangRui.S_healthyOne"/>
-        <activity android:name=".wangRui.S_healthy_two"/>
-
+        <activity android:name=".wangHan.activityAdapter.W_activity_adapterActivity" />
+        <activity android:name=".wangRui.S_healthy_Zero" />
+        <activity android:name=".wangRui.S_healthyOne" />
+        <activity android:name=".wangRui.S_healthy_two" />
+        <activity android:name=".wangHan.W_camera"></activity>
     </application>
 
 </manifest>
