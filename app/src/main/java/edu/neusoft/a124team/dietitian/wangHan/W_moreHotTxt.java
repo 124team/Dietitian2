@@ -13,7 +13,7 @@ public class W_moreHotTxt extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_w_more_hot_txt);
+        setContentView(R.layout.activity_w_activity_adapter);
         setTitle("热门推荐");
     }
 }

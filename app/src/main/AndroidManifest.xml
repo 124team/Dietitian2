@@ -50,7 +50,10 @@
         <activity android:name=".wangRui.S_healthy_Zero" />
         <activity android:name=".wangRui.S_healthyOne" />
         <activity android:name=".wangRui.S_healthy_two" />
-        <activity android:name=".wangHan.W_camera"></activity>
+        <activity android:name=".wangHan.W_camera" />
+        <activity android:name=".wangHan.W_news_1" />
+        <activity android:name=".wangHan.W_news_2" />
+        <activity android:name=".wangHan.W_news_3"></activity>
     </application>
 
 </manifest>

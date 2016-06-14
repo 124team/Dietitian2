@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.neusoft.a124team.dietitian.wangHan.W_news_1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="健康饮食金字塔 教你如何食得营养"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="作者：倾心用户"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="众所周知古埃及金字塔是世界上的奇迹，是智慧和科学的结晶，是最稳定最牢固的建筑形式。同样营养“金字塔”也是膳食的最佳结构，根据塔的原理平衡营养需求，是调整膳食结构，达到合理营养、增进健康的有效方法。\n    所谓平衡膳食，最关键的是出入平衡。为了保持正常体重，既不肥胖，又不过于纤瘦，每个人都应当把握出入平衡，要做到量出为人。我们每天的饮食是“人”，而生理活动，还有体力、脑力支出等都是“出”。量出为人，即以日常的实际消耗，确定每天进食的量。要把握出入平衡，就要注意掌握适量进食，适当运动。\n     每天面对的食物品种非常之多，要把握好出入平衡还真不容易，那么，怎样才能把握出入平衡呢?其实，说难也不难，以下介绍的平衡膳食“金字塔”对解决这一难题就很有帮助。中国营养学会在1997年就出台了《中国居民营养膳食指南》，向人们介绍了膳食“宝塔”，原则性地规范了每天进食的合理量，所以，人们又将其称之为合理膳食的“金字塔”。这个“金字塔”的具体内容如下： 健康饮食金字塔 　 　从下往上看，“金字塔”的最底层是最重要的粮谷类食物(如米饭、面包、馒头、面条等)，我们每天应该吃得最多，占饮食中能量供应比重最大。其内容为：谷物、薯类，全天可食用量为400－500克，其中谷物中的粗粮、杂粮的合理量为50-150克，薯类50-100克，其余为精细粮。当然，各人也可以依据上述原则，再根据不同的情况确定适当的比例。\n    “金字塔”的第二层是蔬菜和水果，每天要吃得多一些，因此在金字塔中占据了相当的地位。理想的摄入量为：蔬菜一天至少食用500克，品种为2-3种，其中，最好要有深色带叶蔬菜，如油菜、菠菜、小白菜等，不得少于300克；水果每天可食用150－200克，品种以不少于两种为宜，重量不宜少于100克，比如，一天吃一个苹果就基本上达到这个指标了。"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -13,7 +13,7 @@ public class W_workDisplay extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_w_work_display);
+        setContentView(R.layout.activity_w_activity_adapter);
         setTitle("作品展示");
     }
 }

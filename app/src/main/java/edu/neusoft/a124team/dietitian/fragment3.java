@@ -21,8 +21,10 @@ import edu.neusoft.a124team.dietitian.wangHan.W_ExpertsAnswer;
 import edu.neusoft.a124team.dietitian.wangHan.W_UserCommunicate;
 import edu.neusoft.a124team.dietitian.wangHan.W_moreHotTxt;
 import edu.neusoft.a124team.dietitian.wangHan.W_mylove;
+import edu.neusoft.a124team.dietitian.wangHan.W_news_1;
+import edu.neusoft.a124team.dietitian.wangHan.W_news_2;
+import edu.neusoft.a124team.dietitian.wangHan.W_news_3;
 import edu.neusoft.a124team.dietitian.wangHan.W_workDisplay;
-import edu.neusoft.a124team.dietitian.wangHan.activityAdapter.W_activity_adapterActivity;
 import edu.neusoft.a124team.dietitian.wangHan.fragmentAdapter.W_dataControl;
 import edu.neusoft.a124team.dietitian.wangHan.fragmentAdapter.W_fragment_baseAdapter;
 
@@ -49,7 +51,14 @@ public class fragment3 extends Fragment {
 
 
         weather = (TextView)view.findViewById(R.id.w_txt_weather);
-        weather.setText(mainActivity.getWeatherInfo());
+
+        if (mainActivity.getWeatherInfo()==null){
+            weather.setText("获取天气信息失败，请检查您的网络连接状态！");
+        }
+        else {
+            weather.setText(mainActivity.getWeatherInfo());
+        }
+
 
         searchButton = (Button)view.findViewById(R.id.w_fragment_searchButton);
         searchButton.setOnClickListener(new View.OnClickListener() {
@@ -147,17 +156,17 @@ public class fragment3 extends Fragment {
             switch (position){
                 case (0) :
                     Toast.makeText(getContext(),"点击了第一个",Toast.LENGTH_LONG).show();
-                    intent = new Intent(getActivity(),W_moreHotTxt.class);
+                    intent = new Intent(getActivity(),W_news_1.class);
                     startActivity(intent);
                     break;
                 case (1):
                     Toast.makeText(getContext(),"点击了第2个",Toast.LENGTH_LONG).show();
-                    intent = new Intent(getActivity(),W_activity_adapterActivity.class);
+                    intent = new Intent(getActivity(),W_news_2.class);
                     startActivity(intent);
                     break;
                 case (2):
                     Toast.makeText(getContext(),"点击了第3个",Toast.LENGTH_LONG).show();
-                    intent = new Intent(getActivity(),W_moreHotTxt.class);
+                    intent = new Intent(getActivity(),W_news_3.class);
                     startActivity(intent);
                     break;
             }

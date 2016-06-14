@@ -13,7 +13,7 @@ public class W_mylove extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_w_mylove);
+        setContentView(R.layout.activity_w_activity_adapter);
         setTitle("我的收藏");
     }
 }
