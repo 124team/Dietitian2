@@ -1,7 +1,11 @@
 package edu.neusoft.a124team.dietitian;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,8 +17,10 @@ import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.ViewFlipper;
 
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -36,6 +42,7 @@ public class fragment4 extends Fragment {
     private ImageButton hImageButtonOnclick5;
     private ImageButton hImageButtonOnclick8;
     private ViewFlipper viewFlipper;
+    private Handler pic_hdl;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -55,6 +62,7 @@ public class fragment4 extends Fragment {
             viewFlipper.startFlipping();
         }
         data_list = new ArrayList<Map<String, Object>>();
+        pic_hdl = new PicHandler();
         hImageButtonSearch=(ImageButton)rootView.findViewById(R.id.imageSearch);
         hImageButtonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -144,17 +152,50 @@ public class fragment4 extends Fragment {
         spinner2.setAdapter(adapter2);
         spinner3.setAdapter(adapter3);
         data_list = new ArrayList<Map<String, Object>>();
-        getData();
+        Thread t = new LoadPicThread();
+        t.start();
         return rootView;
-    }
-    public List<Map<String, Object>> getData() {
-        for (int i = 0; i < 10; i++) {
-            Map<String, Object> map = new HashMap<String, Object>();
-            data_list.add(map);
-        }
-        return data_list;
-    }
 
+    }
+    class LoadPicThread extends Thread {
+
+        @Override
+        public void run() {
+            Bitmap img = getUrlImage("http://139.129.57.32:8080/My12306/Food/h_imagebutton_select1.jpg");
+            Message msg = pic_hdl.obtainMessage();
+            msg.what = 0;
+            msg.obj = img;
+            pic_hdl.sendMessage(msg);
+        }
+    }
+    class PicHandler extends Handler {
+        @Override
+        public void handleMessage(Message msg) {
+            // TODO Auto-generated method stub
+            //String s = (String)msg.obj;
+            //ptv.setText(s);
+            Bitmap myimg = (Bitmap) msg.obj;
+            hImageButtonOnclick1.setImageBitmap(myimg);
+        }
+    }
+    public Bitmap getUrlImage(String url) {
+        Bitmap img = null;
+        try {
+            URL picurl = new URL(url);
+            // 获得连接
+            HttpURLConnection conn = (HttpURLConnection)picurl.openConnection();
+            conn.setConnectTimeout(6000);//设置超时
+            conn.setDoInput(true);
+            conn.setUseCaches(false);//不缓存
+            conn.connect();
+            InputStream is = conn.getInputStream();//获得图片的数据流
+            img = BitmapFactory.decodeStream(is);
+            is.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return img;
+    }
 
 }
 
