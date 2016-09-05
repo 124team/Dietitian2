@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,6 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 import edu.neusoft.a124team.dietitian.R;
+import edu.neusoft.a124team.dietitian.haoDengKe.utils.NetUtils;
 
 public class H_search extends AppCompatActivity {
     ListView listView;
@@ -25,6 +27,10 @@ public class H_search extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (!NetUtils.check(H_search.this)) {
+            Toast.makeText(H_search.this, getString(R.string.network_check), Toast.LENGTH_LONG).show();
+            return;
+        }
         setContentView(R.layout.activity_h_rearch);
         listView=(ListView)findViewById(R.id.listView1);
         HashMap<String,Object> map=new HashMap<>();

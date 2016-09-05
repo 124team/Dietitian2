@@ -7,12 +7,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import edu.neusoft.a124team.dietitian.R;
+import edu.neusoft.a124team.dietitian.haoDengKe.utils.NetUtils;
 
 public class H_fruit extends AppCompatActivity {
     private ViewFlipper viewFlipper;
@@ -21,6 +23,10 @@ public class H_fruit extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (!NetUtils.check(H_fruit.this)) {
+            Toast.makeText(H_fruit.this, getString(R.string.network_check), Toast.LENGTH_LONG).show();
+            return;
+        }
         setContentView(R.layout.activity_h_fruit);
         viewFlipper=(ViewFlipper)findViewById(R.id.viewflipper);
         viewFlipper.setAutoStart(true); // 设置自动播放功能（点击事件，前自动播放）

@@ -1,4 +1,5 @@
 <resources>
+    <string name="network_check">网络无连接</string>
     <string name="app_name">倾心营养师</string>
     <!--咨询模块*********************************by Yu-->
     <string name="y_levelOne">一级营养师</string>
