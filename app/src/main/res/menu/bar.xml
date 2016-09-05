@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/h_add_user_25"
+        android:id="@+id/mn_contract_add"
+        android:title="查询"
+        app:showAsAction="always"
+        android:orderInCategory="100"/>
+
+</menu>

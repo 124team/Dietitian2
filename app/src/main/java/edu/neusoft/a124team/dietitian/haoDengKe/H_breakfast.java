@@ -5,8 +5,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -33,6 +35,10 @@ public class H_breakfast extends AppCompatActivity {
             Toast.makeText(H_breakfast.this, getString(R.string.network_check), Toast.LENGTH_LONG).show();
             return;
         }
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
         setContentView(R.layout.activity_h_breakfast);
         listView=(ListView)findViewById(R.id.listView);
         HashMap<String,Object> map=new HashMap<>();
@@ -171,6 +177,18 @@ public class H_breakfast extends AppCompatActivity {
             return result;
         }
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+                break;
+            case R.id.mn_contract_add:
+                finish();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }
