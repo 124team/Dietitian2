@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="豆瓣鲫鱼"
+                android:text="@string/h_fash_title"
                 android:textSize="20sp" />
 
 
@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="主食"
+                android:text="@string/h_fash_lab_title"
                 android:textColor="#FF0000"
                 android:textSize="15sp" />
             <TableLayout
@@ -341,7 +341,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
-                android:text="-烹饪技巧-"
+                android:text="@string/h_lab_title2"
                 android:textColor="#FF0000"
                 android:textSize="18sp" />
             <LinearLayout
@@ -359,7 +359,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="用厨房纸和摆干淀粉双管齐下，把鱼的表面处理的干干的"
+                    android:text="@string/h_fash_tv1"
                     android:textSize="15sp" />
             </LinearLayout>
             <LinearLayout
@@ -377,7 +377,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="锅要洗干净擦干，在加热的时用姜擦锅，锅里撒盐"
+                    android:text="@string/h_fash_tv2"
                     android:textSize="15sp" />
             </LinearLayout>
             <LinearLayout
@@ -395,7 +395,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="锅烧热后再倒冷油，等油热后在放鱼"
+                    android:text="@string/h_fash_tv3"
                     android:textSize="15sp" />
             </LinearLayout>
             <LinearLayout
@@ -413,7 +413,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="鱼下锅后，转小火煎，在一面完全煎好之前不要翻锅"
+                    android:text="@string/h_fash_tv4"
                     android:textSize="15sp" />
             </LinearLayout>
             <LinearLayout
@@ -431,7 +431,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="给鱼翻身之前，把火调最小或关掉20秒左右，待鱼稍加冷却收缩，也会减少掉皮的风险"
+                    android:text="@string/h_fash_tv5"
                     android:textSize="15sp" />
             </LinearLayout>
 

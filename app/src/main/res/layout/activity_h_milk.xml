@@ -23,13 +23,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="牛奶布丁"
+                android:text="@string/h_milk_title"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="以前只知道布丁好吃，却不知道布丁做起来也很难。这布丁，做出来十分嫩滑，又甜甜的" />
+                android:text="@string/h_milk_introduce" />
+
 
 
 
@@ -144,7 +145,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="-烹饪技巧-"
+                android:text="@string/h_lab_title2"
                 android:textColor="#FF0000"
                 android:textSize="18sp" />
             <LinearLayout
@@ -162,7 +163,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="布丁粉等开水后放入，要不停搅匀，不能有干粉，也不能结块哦"
+                    android:text="@string/h_milk_tv1"
                     android:textSize="15sp" />
             </LinearLayout>
             <LinearLayout
@@ -180,7 +181,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="水的用量也要根据布丁粉的多少来定，少一点亦可"
+                    android:text="@string/h_milk_tv2"
                     android:textSize="15sp" />
             </LinearLayout>
             <LinearLayout
@@ -198,7 +199,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="白糖根据个人口味添加哦"
+                    android:text="@string/h_milk_tv3"
                     android:textSize="15sp" />
             </LinearLayout>
 

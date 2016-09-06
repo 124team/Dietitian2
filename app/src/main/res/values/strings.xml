@@ -1,7 +1,31 @@
 <resources>
     <string name="app_nameOne">倾心营养师</string>
+    <!--美食模块*********************************-->
+    <string name="h_lab_title2">-烹饪技巧-</string>
+    <string name="h_candy_title">冰糖酒酿水果羹</string>
+    <string name="h_candy_lab_title">主食</string>
+    <string name="h_candy_tv1">天气不热的话，就可以直接喝了。如果像最近这样的天气，三十几度的高温,那就放凉后，入冰箱冷藏后再吃，
+那可是相当的冰凉</string>
+    <string name="h_candy_tv2">冰镇一下再喝，更能刺激消化腺分泌，增进食欲，有助消化。特别是提神解乏，解渴消暑</string>
+    <string name="h_fash_title">豆瓣鲫鱼</string>
+    <string name="h_fash_lab_title">主食</string>
+    <string name="h_fash_tv1">用厨房纸和摆干淀粉双管齐下，把鱼的表面处理的干干的</string>
+    <string name="h_fash_tv2">锅要洗干净擦干，在加热的时用姜擦锅，锅里撒盐</string>
+    <string name="h_fash_tv3">锅烧热后再倒冷油，等油热后在放鱼</string>
+    <string name="h_fash_tv4">鱼下锅后，转小火煎，在一面完全煎好之前不要翻锅</string>
+    <string name="h_fash_tv5">给鱼翻身之前，把火调最小或关掉20秒左右，待鱼稍加冷却收缩，也会减少掉皮的风险</string>
+    <string name="h_harm_tv6">煎火腿奶酪蛋饼</string>
+    <string name="h_harm_tv1">煎蛋饼一定要用小火，火大很容易使底部糊上了上部还是流动的蛋液，也可以开小火用锅铲轻轻的翻炒</string>
+    <string name="h_harm_tv2">当蛋饼表面还有流动的蛋液是，就加入芝士丝马上卷起，如果蛋饼全熟了就卷不起来了</string>
+    <string name="h_harm_tv3">这款蛋饼的口感还是比较软嫩的，如果喜欢稍熟的，可以多煎一会儿</string>
+    <string name="h_milk_title">牛奶布丁</string>
+    <string name="h_milk_introduce">以前只知道布丁好吃，却不知道布丁做起来也很难。这布丁，做出来十分嫩滑，又甜甜的</string>
+    <string name="h_milk_tv1">布丁粉等开水后放入，要不停搅匀，不能有干粉，也不能结块哦</string>
+    <string name="h_milk_tv2">水的用量也要根据布丁粉的多少来定，少一点亦可</string>
+    <string name="h_milk_tv3">白糖根据个人口味添加哦</string>
     <string name="h_network_check">网络无连接</string>
-    <!--咨询模块*********************************by Yu-->
+
+    <!--咨询模块*********************************-->
     <string name="y_levelOne">一级营养师</string>
     <string name="y_levelTwo">二级营养师</string>
     <string name="y_levelThree">三级营养师</string>

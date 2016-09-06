@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="煎火腿奶酪蛋饼"
+                android:text="@string/h_harm_tv6"
                 android:textSize="20sp" />
 
 
@@ -322,7 +322,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
-                android:text="-烹饪技巧-"
+                android:text="@string/h_lab_title2"
                 android:textColor="#FF0000"
                 android:textSize="18sp" />
             <LinearLayout
@@ -340,7 +340,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="煎蛋饼一定要用小火，火大很容易使底部糊上了上部还是流动的蛋液，也可以开小火用锅铲轻轻的翻炒"
+                android:text="@string/h_harm_tv1"
                 android:textSize="15sp" />
             </LinearLayout>
             <LinearLayout
@@ -359,7 +359,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="当蛋饼表面还有流动的蛋液是，就加入芝士丝马上卷起，如果蛋饼全熟了就卷不起来了"
+                    android:text="@string/h_harm_tv2"
                     android:textSize="15sp" />
             </LinearLayout>
             <LinearLayout
@@ -377,7 +377,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="这款蛋饼的口感还是比较软嫩的，如果喜欢稍熟的，可以多煎一会儿"
+                    android:text="@string/h_harm_tv3"
                     android:textSize="15sp" />
             </LinearLayout>
 

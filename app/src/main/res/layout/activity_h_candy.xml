@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="冰糖酒酿水果羹"
+                android:text="@string/h_candy_title"
                 android:textSize="20sp" />
 
 
@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="主食"
+                android:text="@string/h_candy_lab_title"
                 android:textColor="#FF0000"
                 android:textSize="15sp" />
             <TableLayout
@@ -261,8 +261,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="天气不热的话，就可以直接喝了。如果像最近这样的天气，三十几度的高温,那就放凉后，入冰箱冷藏后再吃，
-那可是相当的冰凉"
+                    android:text="@string/h_candy_tv1"
                     android:textSize="15sp" />
             </LinearLayout>
             <TextView
@@ -288,7 +287,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="冰镇一下再喝，更能刺激消化腺分泌，增进食欲，有助消化。特别是提神解乏，解渴消暑"
+                    android:text="@string/h_candy_tv2"
                     android:textSize="15sp" />
             </LinearLayout>
 
