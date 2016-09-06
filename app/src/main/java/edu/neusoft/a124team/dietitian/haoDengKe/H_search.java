@@ -4,13 +4,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,6 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 import edu.neusoft.a124team.dietitian.R;
+import edu.neusoft.a124team.dietitian.haoDengKe.utils.NetUtils;
 
 public class H_search extends AppCompatActivity {
     ListView listView;
@@ -25,7 +29,15 @@ public class H_search extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (!NetUtils.check(H_search.this)) {
+            Toast.makeText(H_search.this, getString(R.string.h_network_check), Toast.LENGTH_LONG).show();
+            return;
+        }
         setContentView(R.layout.activity_h_rearch);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
         listView=(ListView)findViewById(R.id.listView1);
         HashMap<String,Object> map=new HashMap<>();
         map.put("img", R.drawable.h_iamgebutton_searchitem1);
@@ -149,6 +161,18 @@ public class H_search extends AppCompatActivity {
         }
 
     }
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+                break;
+            case R.id.mn_contract_add:
+                finish();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
+
+}
 
