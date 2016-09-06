@@ -46,7 +46,7 @@ public class S_loginUi extends AppCompatActivity {
         txt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(S_loginUi.this,S_quickRegistration.class);
+                Intent i=new Intent(S_loginUi.this,S_registerUI.class);
                 startActivity(i);
 
             }

@@ -130,7 +130,8 @@ public class SqliteDB {
 
     public int PassCheck(String pwd,String name){
 
-        Cursor cursor =db.rawQuery("select * from User where userpwd=? and username=?",new String[]{pwd,name});
+        Cursor cursor =db.rawQuery("select * from User where userpwd=? and username=?",
+                new String[]{pwd,name});
         if (cursor.getCount()>0)
         {
             return 1;

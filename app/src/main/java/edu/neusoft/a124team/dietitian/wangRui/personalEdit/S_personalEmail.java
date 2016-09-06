@@ -38,7 +38,7 @@ public class S_personalEmail extends EditText {
         paint.setTextSize(50);
         paint.setColor(Color.BLACK);
         paint.setAntiAlias(true);
-//编写提示文字。
+        //编写提示文字。
         canvas.drawText("邮箱",50,getHeight()/2+23,paint);
         super.onDraw(canvas);
     }

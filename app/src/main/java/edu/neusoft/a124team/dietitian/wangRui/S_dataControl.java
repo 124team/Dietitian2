@@ -14,7 +14,6 @@ public class S_dataControl {
         HashMap<String,String> map=new HashMap<>();
 
         map.put("Img",id);
-
         map.put("Content",txtContent);
         map.put("Time",txtTime);
 
@@ -22,11 +21,9 @@ public class S_dataControl {
 
     }
     public  static HashMap<String,String> getDataSource1(
-            String id,
-            String txtTitle,
-            String id1
-
-    ){
+                                                        String id,
+                                                        String txtTitle,
+                                                        String id1){
         HashMap<String,String> map1=new HashMap<>();
 
         map1.put("Img",id);

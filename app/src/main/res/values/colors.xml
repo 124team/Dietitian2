@@ -8,6 +8,7 @@
     <color name="blue">#0000ff</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+    <color name="query_btn">#1FBAF3</color>
 
 
     <color name="s_login_shapeLine">#1C86EE</color>

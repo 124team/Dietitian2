@@ -39,7 +39,7 @@ public class S_personalAgeEdit extends EditText {
         paint.setColor(Color.BLACK);
         paint.setAntiAlias(true);
 
-//编写提示文字。
+        //编写提示文字。
         canvas.drawText("年龄",50,getHeight()/2+23,paint);
         super.onDraw(canvas);
     }

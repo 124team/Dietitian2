@@ -48,7 +48,7 @@ public class S_personalInformation extends AppCompatActivity {
 
     private View.OnClickListener listener = new View.OnClickListener(){
         public void onClick(View v) {
-            //ljq123文件存放在/data/data/<package name>/shared_prefs目录下
+
             SharedPreferences sharedPreferences=getSharedPreferences("ljq123",
                     Context.MODE_WORLD_READABLE+Context.MODE_WORLD_WRITEABLE+Context.MODE_WORLD_WRITEABLE);
                     String name = nameText.getText().toString();

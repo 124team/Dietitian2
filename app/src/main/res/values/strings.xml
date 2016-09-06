@@ -1,6 +1,5 @@
 <resources>
-    <string name="network_check">网络无连接</string>
-    <string name="app_name">倾心营养师</string>
+    <string name="app_nameOne">倾心营养师</string>
     <!--咨询模块*********************************by Yu-->
     <string name="y_levelOne">一级营养师</string>
     <string name="y_levelTwo">二级营养师</string>
@@ -91,6 +90,18 @@
     <string name="s_personal_button">保存设置</string>
     <string name="s_personal_showButton">显示</string>
     <!--END-->
+
+
+    <string name="app_name">手机快速注册</string>
+    <string name="smssdk_bind_mobile_show">手机快速注册</string>
+    <string name="smssdk_contact">通讯录好友</string>
+    <string name="smssdk_appkey_dialog_title">请输入您的应用信息</string>
+    <string name="smssdk_appkey">AppKey</string>
+    <string name="smssdk_appkey_hint">请输入您的AppKey</string>
+    <string name="smssdk_appsecret">AppSecret</string>
+    <string name="smssdk_appsecrethint">请输入您的AppSecret</string>
+
+
     <!--s_healthy-->
     <string name="s_healthyOne">“美国油桃”：产地是南美，并不比国产的好吃
 

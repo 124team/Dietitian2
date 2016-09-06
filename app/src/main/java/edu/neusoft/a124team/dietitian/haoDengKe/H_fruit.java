@@ -2,21 +2,17 @@ package edu.neusoft.a124team.dietitian.haoDengKe;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import edu.neusoft.a124team.dietitian.R;
-import edu.neusoft.a124team.dietitian.haoDengKe.utils.NetUtils;
 
 public class H_fruit extends AppCompatActivity {
     private ViewFlipper viewFlipper;
@@ -25,16 +21,7 @@ public class H_fruit extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (!NetUtils.check(H_fruit.this)) {
-            Toast.makeText(H_fruit.this, getString(R.string.network_check), Toast.LENGTH_LONG).show();
-            return;
-        }
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(false);
         setContentView(R.layout.activity_h_fruit);
-
         viewFlipper=(ViewFlipper)findViewById(R.id.viewflipper);
         viewFlipper.setAutoStart(true); // 设置自动播放功能（点击事件，前自动播放）
         viewFlipper.setFlipInterval(3000);
@@ -124,18 +111,6 @@ public class H_fruit extends AppCompatActivity {
         intent.putExtra("Title", "脆皮水果沙拉");
         intent.putExtra("img",img);
         startActivity( intent);
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case android.R.id.home:
-                finish();
-                break;
-            case R.id.mn_contract_add:
-                finish();
-                break;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
 }
