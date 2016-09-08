@@ -25,12 +25,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="糖醋排骨"
+                android:id="@+id/h_tv_Internet"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/h_tv"
                 android:text="家中的餐桌上，总是少不了这样总也吃不腻的家常菜。每次有糖醋排骨，总是想多吃几口米饭，食欲大增。酸酸甜甜的汤汁
 ，浓稠晶亮，裹着鲜香的排骨。就是这样的看似普通的家长菜，最能打动味蕾和人心，精明的你一定一次比一次做的更加好吃" />
 

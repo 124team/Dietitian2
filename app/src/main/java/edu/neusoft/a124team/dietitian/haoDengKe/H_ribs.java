@@ -7,9 +7,17 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -21,6 +29,8 @@ import edu.neusoft.a124team.dietitian.haoDengKe.utils.NetUtils;
 public class H_ribs extends AppCompatActivity {
     private Handler pic_hdl;
     private ImageView hImageViewRibs;
+    private TextView hTextView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,9 +44,30 @@ public class H_ribs extends AppCompatActivity {
         actionBar.setDisplayShowHomeEnabled(false);
         setContentView(R.layout.activity_h_ribs);
         hImageViewRibs=(ImageView)findViewById(R.id.h_imageview_ribs);
+        hTextView=(TextView)findViewById(R.id.h_tv_Internet);
+        RequestQueue mQueue = Volley.newRequestQueue(getApplicationContext());
+
+        StringRequest stringRequest = new StringRequest("http://139.129.57.32:8080/Dietitian/SynTxtDataServlet",
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d("TAG", response);
+                        hTextView.setText(response.toString());
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e("TAG", error.getMessage(), error);
+                hTextView.setText(error.getMessage());
+
+            }
+        });
+        mQueue.add(stringRequest);
         pic_hdl = new PicHandler();
         Thread t = new LoadPicThread();
         t.start();
+
+
 
     }
 
