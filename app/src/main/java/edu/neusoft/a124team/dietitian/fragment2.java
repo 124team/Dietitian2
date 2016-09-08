@@ -15,7 +15,7 @@ import android.widget.ScrollView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import edu.neusoft.a124team.dietitian.yuJiangPeng.Y_detail_data;
+import edu.neusoft.a124team.dietitian.wanghao.H_detail_data;
 
 
 public class fragment2 extends Fragment {
@@ -96,7 +96,7 @@ public class fragment2 extends Fragment {
                case R.id.y_img_nutr_head8:
 
                    Intent intent= new Intent(getActivity().getApplicationContext(),
-                           Y_detail_data.class);
+                           H_detail_data.class);
                    startActivity(intent);
                    break;
 

@@ -1,4 +1,4 @@
-package edu.neusoft.a124team.dietitian.yuJiangPeng;
+package edu.neusoft.a124team.dietitian.wanghao;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import java.util.Map;
 
 import edu.neusoft.a124team.dietitian.R;
 
-public class Y_detail_data extends android.support.v7.app.AppCompatActivity {
+public class H_detail_data extends android.support.v7.app.AppCompatActivity {
     private ListView listView;
     private  Toolbar detailToolbar;
     private ScrollView mScrollView;
@@ -64,7 +64,7 @@ public class Y_detail_data extends android.support.v7.app.AppCompatActivity {
         //*************************用户头像部分***************************//
         listView = (ListView)this.findViewById(R.id.y_detail_listV);
         List<Map<String, Object>> list = getData();
-        listView.setAdapter(new Y_detail_adapter(Y_detail_data.this,list));
+        listView.setAdapter(new H_detail_adapter(H_detail_data.this,list));
         //*************************用户头像部分结束***************************//
 
     }
@@ -85,14 +85,14 @@ public class Y_detail_data extends android.support.v7.app.AppCompatActivity {
 
     //*************************我要定制按钮***************************//
     public void bespoke(View v){
-        Intent intent= new Intent(this, Y_bespoke_demo.class);
+        Intent intent= new Intent(this, W_bespoke_demo.class);
         startActivity(intent);
     }
     //*************************我要定制按钮***************************//
 
     //*************************我要咨询按钮***************************//
     public void consult(View v){
-        Intent intent= new Intent(this, Y_conversation_demo.class);
+        Intent intent= new Intent(this, W_conversation_demo.class);
         startActivity(intent);
     }
     //*************************我要咨询按钮结束***************************//

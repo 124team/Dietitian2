@@ -2,7 +2,9 @@ package edu.neusoft.a124team.dietitian.haoDengKe;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,6 +16,10 @@ public class H_breakfast_item2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_h_breakfast_item2);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
         ImageView imageview = (ImageView) findViewById(R.id.imageView1);
         Intent intent = getIntent();
         if (intent != null) {
@@ -28,5 +34,17 @@ public class H_breakfast_item2 extends AppCompatActivity {
             text2.setText(StringB);
 
         }
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+                break;
+            case R.id.mn_contract_add:
+                finish();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

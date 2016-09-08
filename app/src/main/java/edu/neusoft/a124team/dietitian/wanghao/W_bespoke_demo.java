@@ -1,4 +1,4 @@
-package edu.neusoft.a124team.dietitian.yuJiangPeng;
+package edu.neusoft.a124team.dietitian.wanghao;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import edu.neusoft.a124team.dietitian.R;
 
-public class Y_bespoke_demo extends android.support.v7.app.AppCompatActivity implements View.OnClickListener {
+public class W_bespoke_demo extends android.support.v7.app.AppCompatActivity implements View.OnClickListener {
   private Toolbar mtoolbar;
     private Button y_btn;
     private ImageView bespokeImg;
@@ -39,7 +39,7 @@ public class Y_bespoke_demo extends android.support.v7.app.AppCompatActivity imp
         y_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Y_bespoke_demo.this,Y_popups_activity.class));
+                startActivity(new Intent(W_bespoke_demo.this,H_popups_activity.class));
             }
         });
 

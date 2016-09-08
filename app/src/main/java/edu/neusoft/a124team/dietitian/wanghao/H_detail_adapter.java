@@ -1,4 +1,4 @@
-package edu.neusoft.a124team.dietitian.yuJiangPeng;
+package edu.neusoft.a124team.dietitian.wanghao;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -16,12 +16,12 @@ import edu.neusoft.a124team.dietitian.R;
 /**
  * Created by dell on 2016/6/9.
  */
-public class Y_detail_adapter extends BaseAdapter{
+public class H_detail_adapter extends BaseAdapter{
     private List<Map<String, Object>> y_data;
     private LayoutInflater y_layoutInflater;
     private Context y_context;
 
-    public Y_detail_adapter(Context y_context, List<Map<String, Object>> y_data){
+    public H_detail_adapter(Context y_context, List<Map<String, Object>> y_data){
         this.y_context=y_context;
         this.y_data=y_data;
         this.y_layoutInflater=LayoutInflater.from(y_context);

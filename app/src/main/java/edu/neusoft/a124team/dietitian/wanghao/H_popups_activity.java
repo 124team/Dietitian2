@@ -1,4 +1,4 @@
-package edu.neusoft.a124team.dietitian.yuJiangPeng;
+package edu.neusoft.a124team.dietitian.wanghao;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import edu.neusoft.a124team.dietitian.R;
 
-public class Y_popups_activity extends AppCompatActivity implements View.OnClickListener {
+public class H_popups_activity extends AppCompatActivity implements View.OnClickListener {
    private LinearLayout mlinearyout;
     private RelativeLayout r1,r2,r3;
     private Button concel;

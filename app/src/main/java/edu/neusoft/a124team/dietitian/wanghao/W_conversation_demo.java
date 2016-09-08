@@ -1,4 +1,4 @@
-package edu.neusoft.a124team.dietitian.yuJiangPeng;
+package edu.neusoft.a124team.dietitian.wanghao;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import edu.neusoft.a124team.dietitian.R;
 
-public class Y_conversation_demo extends android.support.v7.app.AppCompatActivity {
+public class W_conversation_demo extends android.support.v7.app.AppCompatActivity {
 private Toolbar mtoolBar;
     private ImageView converImg;
     @Override

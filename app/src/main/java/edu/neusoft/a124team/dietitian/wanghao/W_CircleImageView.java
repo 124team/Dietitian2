@@ -1,8 +1,6 @@
-package edu.neusoft.a124team.dietitian.yuJiangPeng;
+package edu.neusoft.a124team.dietitian.wanghao;
 
-/**
- * Created by dell on 2016/6/8.
- */
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -21,7 +19,7 @@ import android.widget.ImageView;
 
 import edu.neusoft.a124team.dietitian.R;
 
-public class Y_CircleImageView extends ImageView {
+public class W_CircleImageView extends ImageView {
 
     private static final ScaleType SCALE_TYPE = ScaleType.CENTER_CROP;
 
@@ -52,15 +50,15 @@ public class Y_CircleImageView extends ImageView {
     private boolean mReady;
     private boolean mSetupPending;
 
-    public Y_CircleImageView(Context context) {
+    public W_CircleImageView(Context context) {
         super(context);
     }
 
-    public Y_CircleImageView(Context context, AttributeSet attrs) {
+    public W_CircleImageView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public Y_CircleImageView(Context context, AttributeSet attrs, int defStyle) {
+    public W_CircleImageView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         super.setScaleType(SCALE_TYPE);
 

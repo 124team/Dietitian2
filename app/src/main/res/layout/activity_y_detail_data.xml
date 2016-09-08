@@ -41,7 +41,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <edu.neusoft.a124team.dietitian.yuJiangPeng.Y_CircleImageView
+        <edu.neusoft.a124team.dietitian.wanghao.W_CircleImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/y_img_detail_head"

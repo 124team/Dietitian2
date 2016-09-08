@@ -3,7 +3,9 @@ package edu.neusoft.a124team.dietitian.haoDengKe;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
@@ -24,6 +26,10 @@ public class H_breakfast2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_h_breakfast2);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
         listView=(ListView)findViewById(R.id.listView1);
         HashMap<String,Object> map=new HashMap<>();
         map.put("img", R.drawable.h_breakfast_item1);
@@ -78,5 +84,17 @@ public class H_breakfast2 extends AppCompatActivity {
             return result;
         }
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+                break;
+            case R.id.mn_contract_add:
+                finish();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
