@@ -62,12 +62,12 @@
         android:layout_gravity="center"
         android:inputType="textPassword"/>
     <Button
+        style="@style/button_style"
         android:layout_marginTop="30dp"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="@string/s_login"
-        android:background="@drawable/s_login_btnshape"
         android:layout_gravity="center"
+        android:text="@string/s_login"
         android:id="@+id/s_login_btn"
         />
     <LinearLayout

@@ -4,17 +4,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="短信验证"
-        android:textColor="#00ffaa"
-        android:textSize="20dp" />
+
 
     <TextView
+        android:paddingTop="90dp"
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,6 +18,7 @@
         android:text="手机号：" />
 
     <EditText
+
         android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,6 +32,7 @@
     </EditText>
 
     <TextView
+
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,18 +55,19 @@
 
     <Button
         android:id="@+id/getcord"
-        style="?android:attr/buttonStyleSmall"
+        style="@style/button_style"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_alignTop="@+id/cord"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_toRightOf="@+id/cord"
         android:visibility="visible"
         android:text="获取验证码" />
 
     <Button
         android:id="@+id/savecord"
+        style="@style/button_style"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cord"

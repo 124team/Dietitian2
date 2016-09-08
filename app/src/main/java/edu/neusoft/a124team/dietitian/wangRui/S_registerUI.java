@@ -22,6 +22,7 @@ public class S_registerUI extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(S_registerUI.this,S_register.class);
                 startActivity(i);
+                finish();
             }
         });
         commonRegister.setOnClickListener(new View.OnClickListener() {
@@ -29,6 +30,7 @@ public class S_registerUI extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(S_registerUI.this,S_quickRegistration.class);
                 startActivity(i);
+                finish();
             }
         });
     }

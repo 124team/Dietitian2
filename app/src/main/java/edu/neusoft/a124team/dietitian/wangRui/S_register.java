@@ -2,6 +2,7 @@ package edu.neusoft.a124team.dietitian.wangRui;
 
 
 
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
@@ -135,7 +136,7 @@ public class S_register extends AppCompatActivity implements View.OnClickListene
                 now.setVisibility(View.GONE);
                 getCord.setVisibility(View.VISIBLE);
             }
-        };
+        }
     };
 
     Handler handler=new Handler(){
@@ -152,6 +153,8 @@ public class S_register extends AppCompatActivity implements View.OnClickListene
                 //短信注册成功后，返回MainActivity,然后提示新好友
                 if (event == SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE) {//提交验证码成功,验证通过
                     Toast.makeText(getApplicationContext(), "验证码校验成功", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(S_register.this,S_loginUi.class);
+                    startActivity(i);
                     handlerText.sendEmptyMessage(2);
                 } else if (event == SMSSDK.EVENT_GET_VERIFICATION_CODE){//服务器验证码发送成功
                     reminderText();

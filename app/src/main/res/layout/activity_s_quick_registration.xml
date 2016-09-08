@@ -59,6 +59,7 @@
             android:textColorHint="#c2e2e0e0"
             />
         <Button
+            style="@style/button_style"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="@drawable/s_login_btnshape"

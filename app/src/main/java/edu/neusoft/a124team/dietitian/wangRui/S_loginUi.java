@@ -48,6 +48,7 @@ public class S_loginUi extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i=new Intent(S_loginUi.this,S_registerUI.class);
                 startActivity(i);
+                finish();
 
             }
         });
